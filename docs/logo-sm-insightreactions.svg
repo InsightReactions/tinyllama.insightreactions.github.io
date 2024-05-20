@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.298237mm"
+   height="30.613007mm"
+   viewBox="0 0 32.298237 30.613007"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title2">InsightReactions Icon</title>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#000000"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.175463"
+     inkscape:cx="137.67184"
+     inkscape:cy="345.21387"
+     inkscape:window-width="1685"
+     inkscape:window-height="1371"
+     inkscape:window-x="70"
+     inkscape:window-y="32"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     inkscape:export-bgcolor="#000000ff"
+     showgrid="false" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-29.44007,-69.931333)">
+    <rect
+       style="fill:#18181b;fill-opacity:1;stroke-width:0.317232"
+       id="rect2"
+       width="50.799999"
+       height="50.799999"
+       x="20.189188"
+       y="59.837837"
+       inkscape:export-filename="icon-light-bg.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       id="g11"
+       transform="translate(-42.901332,-0.64491014)"
+       inkscape:export-filename="ir-sm-logo.svg"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <g
+         aria-label="["
+         transform="scale(1.1645316,0.85871439)"
+         id="text1"
+         style="font-size:38.1491px;-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff;stroke-width:0.198692">
+        <path
+           d="M 70.399101,117.83807 H 62.1206 V 82.188267 h 8.278501 v 3.849093 h -4.997678 v 27.77255 h 4.997678 z"
+           id="path347"
+           sodipodi:nodetypes="ccccccccc" />
+      </g>
+      <g
+         aria-label="R"
+         transform="scale(1.0179267,0.98238897)"
+         id="text2"
+         style="font-size:43.6435px;-inkscape-font-specification:'sans-serif, ';fill:#006fee;stroke-width:0.22731">
+        <path
+           d="m 89.136411,71.841729 q 5.804586,0 8.554126,2.225819 2.793183,2.182175 2.793183,6.633812 0,2.48768 -0.916512,4.146133 -0.916514,1.658453 -2.356749,2.662253 -1.396592,0.960157 -2.967758,1.527523 l 8.554129,13.965921 H 98.214259 L 90.663933,90.128356 H 84.466556 V 103.00319 H 80.538641 V 71.841729 Z m -0.218218,3.404193 H 84.466556 V 86.81145 h 4.669855 q 3.796985,0 5.542725,-1.483879 1.74574,-1.527522 1.74574,-4.451637 0,-3.055045 -1.833027,-4.320707 -1.833027,-1.309305 -5.673656,-1.309305 z"
+           id="path350" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>InsightReactions Icon</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
