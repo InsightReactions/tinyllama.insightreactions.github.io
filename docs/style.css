@@ -1188,7 +1188,11 @@ body {
   line-height: 48px; }
 
 .mat-card {
-  padding: 24px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 12px;
+  width: 100%;
   background: #242429;
   color: white; }
   .mat-card:not([class*='mat-elevation-z']) {
@@ -2343,7 +2347,13 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border: 1px solid var(--ir-border-color);
   border-radius: 6px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  min-width: 340px;
+}
+
+a, .mat-card-title {
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* Unvisited link */
