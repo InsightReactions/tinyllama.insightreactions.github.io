@@ -2315,7 +2315,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   width: 50%;
 
   @media (max-width: 1300px) {
-      width: fit-content;
+      width: 100%;
   }
 }
 
