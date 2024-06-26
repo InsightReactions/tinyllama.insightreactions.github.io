@@ -40,18 +40,65 @@
         <div class="card-frame fitArticleWidth">
             <div class="mat-card">
                 <h1 id="getting-started-with-open-webui" class="mat-card-title">Getting Started with Open WebUI</h1>
+                <h2 id="table-of-contents">Table of Contents</h2>
+                <ul class="toc">
+                    <li><a href="#getting-started-with-open-webui">Getting Started with Open WebUI</a></li>
+                    <li><a href="#initial-setup">Initial Setup</a>
+                        <ul>
+                            <li><a href="#accessing-open-webui">Accessing Open WebUI</a></li>
+                            <li><a href="#creating-an-account">Creating an Account</a></li>
+                            <li><a href="#resolving-account-issues">Resolving Account Issues</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#account-activation">Account Activation</a>
+                        <ul>
+                            <li><a href="#access-the-administrator-panel">Access the Administrator Panel</a></li>
+                            <li><a href="#step-2-promote-the-pending-user">Step 2: Promote the Pending User</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#how-to-chat">How to Chat</a>
+                        <ul>
+                            <li><a href="#step-1-starting-a-new-conversation">Step 1: Starting a New Conversation</a>
+                            </li>
+                            <li><a href="#step-2-selecting-a-model">Step 2: Selecting a Model</a></li>
+                            <li><a href="#step-3-sending-messages">Step 3: Sending Messages</a></li>
+                            <li><a href="#step-4-submitting-messages">Step 4: Submitting Messages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#model-selection">Model Selection</a>
+                        <ul>
+                            <li><a href="#available-models">Available Models</a>
+                                <ul>
+                                    <li><a href="#llama3">llama3</a></li>
+                                    <li><a href="#hermes-2-theta-llama-3">hermes-2-Theta-llama-3</a></li>
+                                    <li><a href="#llava-phi3">llava-phi3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#image-inference-via-chat">Image Inference via Chat</a>
+                        <ul>
+                            <li><a href="#using-lmms-for-image-inference">Using LMMs for Image Inference</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#image-generation-via-chat">Image Generation via Chat</a>
+                        <ul>
+                            <li><a href="#generating-images-with-dreamshaperxl-and-llms">Generating Images with
+                                    DreamShaperXL and LLMs</a></li>
+                        </ul>
+                    </li>
+                </ul>
                 <h2 id="initial-setup">Initial Setup</h2>
                 <h3 id="accessing-open-webui">Accessing Open WebUI</h3>
                 <p>To get started, navigate to the tinyllama.local landing page and click on &quot;Open WebUI&quot; to
                     access the service. You'll be directed to a sign-in page.</p>
-                <p><img src="sign_up.png"
-                        alt="Open WebUI Sign Up screen"></p>
+                <p><img src="sign_up.png" alt="Open WebUI Sign Up screen" class="fitImage"></p>
                 <h3 id="creating-an-account">Creating an Account</h3>
                 <p>If this is your first time accessing Open WebUI, you'll need to create an account. Click the
                     &quot;Sign up&quot; button and enter your name, email address, and password. Please note that all
                     account information and associated data will be stored securely on the device.</p>
-                <p><img src="account_pending.png"
-                        alt="Open WebUI Account Activation Pending screen"></p>
+                <p><img src="account_pending.png" class="fitImage" alt="Open WebUI Account Activation Pending screen">
+                </p>
                 <h3 id="resolving-account-issues">Resolving Account Issues</h3>
                 <p>If someone else has already created an account on this device, you may encounter a message indicating
                     that an account activation is pending. In this case, the original account holder (listed as
@@ -62,10 +109,9 @@
                 <h3 id="access-the-administrator-panel">Access the Administrator Panel</h3>
                 <p>Log in to Open WebUI with the administrator account (usually the first account created). Click on
                     your profile icon and select &quot;Admin Panel&quot;.</p>
-                <p><img src="admin_panel_location.png"
-                        alt="Open WebUI Admin Panel Location"></p>
+                <p><img src="admin_panel_location.png" class="fitImage" alt="Open WebUI Admin Panel Location"></p>
                 <h3 id="step-2-promote-the-pending-user">Step 2: Promote the Pending User</h3>
-                <p><img src="admin_panel_promote_user.png"
+                <p><img src="admin_panel_promote_user.png" class="fitImage"
                         alt="Open WebUI Admin Panel Promote User screen"></p>
                 <p>From the Admin Panel, locate the user account with a pending role. Click on the &quot;pending&quot;
                     role to change it to the &quot;user&quot; role.</p>
@@ -74,8 +120,7 @@
                     configuration settings associated with Open WebUI.</p>
                 <h2 id="how-to-chat">How to Chat</h2>
                 <h3 id="step-1-starting-a-new-conversation">Step 1: Starting a New Conversation</h3>
-                <p><img src="how_to_chat.png"
-                        alt="Open WebUI Chat screen"></p>
+                <p><img src="how_to_chat.png" class="fitImage" alt="Open WebUI Chat screen"></p>
                 <p>To start a new conversation, click on the &quot;New Chat&quot; button in the top-left corner of the
                     Open WebUI interface once you're logged in.</p>
                 <h3 id="step-2-selecting-a-model">Step 2: Selecting a Model</h3>
@@ -116,16 +161,14 @@
                 </p>
                 <h2 id="image-inference-via-chat">Image Inference via Chat</h2>
                 <h3 id="using-lmms-for-image-inference">Using LMMs for Image Inference</h3>
-                <p><img src="image_request.png"
-                        alt="Open WebUI image inference workflow"></p>
+                <p><img src="image_request.png" class="fitImage" alt="Open WebUI image inference workflow"></p>
                 <p>To perform image inference, follow these steps:</p>
                 <ol>
                     <li>Select a large multi-modal model capable of image inference, such as llava-phi3.</li>
                     <li>Attach the image to the message box by either copying and pasting an image or clicking on the
                         &quot;+&quot; icon and selecting &quot;Upload Files&quot;.</li>
                 </ol>
-                <p><img src="image_response.png"
-                        alt="Open WebUI image inference response"></p>
+                <p><img src="image_response.png" class="fitImage" alt="Open WebUI image inference response"></p>
                 <h3 id="important-note-1">Important Note</h3>
                 <p>Keep in mind that while these models are improving every day, they're not perfect yet. However, you
                     can still get great assistance with interpreting textual content like labels or mixed-media images
@@ -141,8 +184,7 @@
                     <li>
                         <p>Choose an LLM to collaborate with on your image generation journey. llama3 is a suitable
                             choice for most tasks.
-                            <img src="image_gen_prompt.png"
-                                alt="Open WebUI image generation prompt">
+                            <img src="image_gen_prompt.png" class="fitImage" alt="Open WebUI image generation prompt">
                         </p>
                     </li>
                     <li>
@@ -160,8 +202,7 @@
                             regenerate the response and try again.</p>
                     </li>
                 </ol>
-                <p><img src="image_gen_response.png"
-                        alt="Open WebUI image generation icon"></p>
+                <p><img src="image_gen_response.png" class="fitImage" alt="Open WebUI image generation icon"></p>
                 <h3 id="important-note-2">Important Note</h3>
                 <p>The initial image generation may take up to 45 seconds depending on system utilization. Subsequent
                     generations typically complete within 10-20 seconds, as the image model remains in memory for up to
