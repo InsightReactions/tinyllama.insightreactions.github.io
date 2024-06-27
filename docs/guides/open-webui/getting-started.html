@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <title>Tiny Llama</title>
     <link rel="stylesheet" href="../../style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#006fee">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#006fee">
     <meta name="msapplication-TileColor" content="#006fee">
     <meta name="theme-color" content="#006fee">
     <meta name="viewport" content="initial-scale=1">
@@ -23,23 +23,22 @@
         <p
             style="color: #006fee; margin-right: 5%; font-weight: 700; font-size: x-large; margin-bottom: 0; align-content: center; text-align: center; align-self: center;">
             Tiny Llama</p>
-        <a class="header-link external" href="https://github.com/InsightReactions/TinyLlama/wiki" target="_blank"
-            style="padding-left: 2%;">Wiki</a>
+        <a class="header-link" href="../" style="padding-left: 2%;">Guides</a>
+        <div style="border: 0; border-right: 1px solid var(--ir-border-color); margin-left: 2%; margin-right: 2%;">
+        </div>
+        <a class="header-link external" href="../../">News</a>
         <div style="border: 0; border-right: 1px solid var(--ir-border-color); margin-left: 2%; margin-right: 2%;">
         </div>
         <a class="header-link external" href="https://github.com/InsightReactions/TinyLlama/discussions"
             target="_blank">Discuss</a>
         <div style="border: 0; border-right: 1px solid var(--ir-border-color); margin-left: 2%; margin-right: 2%;">
         </div>
-        <a class="header-link" href="https://tinyllama.insightreactions.com">News</a>
-        <div style="border: 0; border-right: 1px solid var(--ir-border-color); margin-left: 2%; margin-right: 2%;">
-        </div>
         <a class="header-link external" href="https://insightreactions.com/about" target="_blank">About</a>
     </div>
     <div style="display: flex; flex-direction: column; align-items: center; padding: 2%; gap: 12px;">
+        <h1 id="getting-started-with-open-webui" class="mat-card-title">Getting Started with Open WebUI</h1>
         <div class="card-frame fitArticleWidth">
             <div class="mat-card">
-                <h1 id="getting-started-with-open-webui" class="mat-card-title">Getting Started with Open WebUI</h1>
                 <h2 id="table-of-contents">Table of Contents</h2>
                 <ul class="toc">
                     <li><a href="#getting-started-with-open-webui">Getting Started with Open WebUI</a></li>
@@ -83,8 +82,8 @@
                     </li>
                     <li><a href="#image-generation-via-chat">Image Generation via Chat</a>
                         <ul>
-                            <li><a href="#generating-images-with-dreamshaperxl-and-llms">Generating Images with
-                                    DreamShaperXL and LLMs</a></li>
+                            <li><a href="#generating-images-with-diffusion-models-and-llms">Generating Images with
+                                    Diffusion Models and LLMs</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -136,10 +135,11 @@
                     cases, it's preferable to only copy and paste relevant sections of a document.</p>
                 <h3 id="step-4-submitting-messages">Step 4: Submitting Messages</h3>
                 <p>Once you've entered a message, click the up arrow to submit it to the LLM (Large Language Model).</p>
-                <h3 id="important-note">Important Note</h3>
-                <p>Please wait ten to fifteen seconds for the model to load into memory. Once loaded, the delay will be
-                    shortened to a couple of seconds. The model will stay loaded in memory and waiting for responses for
-                    up to five minutes before freeing up that memory for other tasks.</p>
+                <aside class="warning-card">
+                    Please wait 10-15 seconds for the model to load into memory. Once loaded, the delay will be
+                    shortened to 1-2 seconds. The model will stay loaded in memory and waiting for responses for
+                    up to 5 minutes before freeing up that memory for other tasks.
+                </aside>
                 <h2 id="model-selection">Model Selection</h2>
                 <p>To select a model, click on the model name at the top of the chat window. You can choose from several
                     options, and you can even select multiple models simultaneously to compare their responses.</p>
@@ -175,16 +175,21 @@
                     that contain both text and image data. The more context you provide the model upfront, the better it
                     will be at understanding the scene and providing a helpful response.</p>
                 <h2 id="image-generation-via-chat">Image Generation via Chat</h2>
-                <h3 id="generating-images-with-dreamshaperxl-and-llms">Generating Images with DreamShaperXL and LLMs
+                <img src="image_gen_prompt.png" class="fitImage" alt="Open WebUI image generation prompt">
+                <h3 id="generating-images-with-diffusion-models-and-llms">Generating Images with Diffusion Models and
+                    LLMs
                 </h3>
-                <p>Tiny Llama is configured for image generation inference by default, using DreamShaperXL as its
+                <br />
+                <p>Open-WebUI is configured for image generation inference by default, using
+                    <a class="external" href="https://civitai.com/models/15003?modelVersionId=372799"
+                        target="_blank">CyberRealistic V4.2</a> as its
                     partner model. To generate an image with the assistance of your favorite Large Language Model (LLM),
-                    follow these steps:</p>
+                    follow these steps:
+                </p>
                 <ol>
                     <li>
                         <p>Choose an LLM to collaborate with on your image generation journey. llama3 is a suitable
                             choice for most tasks.
-                            <img src="image_gen_prompt.png" class="fitImage" alt="Open WebUI image generation prompt">
                         </p>
                     </li>
                     <li>
@@ -193,7 +198,7 @@
                     </li>
                     <li>
                         <p>Once you've written and edited the caption as needed, click the image icon to submit it to
-                            SwarmUI.</p>
+                            SwarmUI for inference.</p>
                     </li>
                     <li>
                         <p>Wait for the image generation process to complete. The generated image will appear above the
@@ -203,10 +208,12 @@
                     </li>
                 </ol>
                 <p><img src="image_gen_response.png" class="fitImage" alt="Open WebUI image generation icon"></p>
-                <h3 id="important-note-2">Important Note</h3>
-                <p>The initial image generation may take up to 45 seconds depending on system utilization. Subsequent
-                    generations typically complete within 10-20 seconds, as the image model remains in memory for up to
-                    one minute. After a minute, the image is unloaded to make room for other models.</p>
+                <aside class="warning-card">
+                    The initial image generation may take up to 5-10 seconds depending on system utilization and prompt
+                    parameters. Subsequent generations typically complete within 2-5 seconds, as the diffusion model
+                    remains in memory for up to 1 minute. After 1 minute, the diffusion model is unloaded to make room
+                    for other models.
+                </aside>
             </div>
         </div>
     </div>

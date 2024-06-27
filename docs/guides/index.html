@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <title>Tiny Llama</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#006fee">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#006fee">
     <meta name="msapplication-TileColor" content="#006fee">
     <meta name="theme-color" content="#006fee">
     <meta name="viewport" content="initial-scale=1">
@@ -18,14 +18,14 @@
 <body class="mat-app-background mat-body" style="padding: 12px; margin-bottom: 77px;">
     <div
         style="display: flex; flex-wrap: wrap; justify-content: center; border-bottom: 1px solid var(--ir-border-color); padding-bottom: 12px;">
-        <img src="logo_render_tinyllama.png" alt="Tiny Llama Compressed Logo"
+        <img src="../logo_render_tinyllama.png" alt="Tiny Llama Compressed Logo"
             style="height: 36px; margin-left: 24px; margin-right: 24px;" />
         <p
             style="color: #006fee; margin-right: 5%; font-weight: 700; font-size: x-large; margin-bottom: 0; align-content: center; text-align: center; align-self: center;">
             Tiny Llama</p>
-        <a class="header-link" href="guides/" style="padding-left: 2%;">Guides</a>
+        <a class="header-link" href="./" style="padding-left: 2%;">Guides</a>
         <div style="border: 0; border-right: 1px solid var(--ir-border-color); margin-left: 2%; margin-right: 2%;"></div>
-        <a class="header-link external" href="./">News</a>
+        <a class="header-link external" href="../">News</a>
         <div style="border: 0; border-right: 1px solid var(--ir-border-color); margin-left: 2%; margin-right: 2%;"></div>
         <a class="header-link external" href="https://github.com/InsightReactions/TinyLlama/discussions" target="_blank">Discuss</a>
         <div style="border: 0; border-right: 1px solid var(--ir-border-color); margin-left: 2%; margin-right: 2%;"></div>
@@ -33,19 +33,27 @@
     </div>
     <div
         style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2%; gap: 12px;">
-        <h1>News</h1>
+        <h1>User Guides</h1>
         <p style="color: gray; font-style: italic;">Click on a title below to navigate to each respective section.</p>
         <div class="card-frame fitArticleWidth">
-            <img src="logo_render_tinyllama.png" style="height: 64px; padding: 12px; align-self: center;" />
+            <img src="../logo_render_tinyllama.png" style="height: 64px; padding: 12px; align-self: center;" />
             <div class="mat-card">
-                <a href="three-pillars.html" class="mat-card-title">Tiny Llama: Your Gateway to Affordable AI
-                    Technology</a>
-                <p class="mat-card-content">Discover Tiny Llama, the open-source software solution that makes advanced
-                    AI accessible and affordable. Learn how it empowers users with seamless image generation and
-                    intelligent conversations from the comfort of your own home.</p>
-                <p class="mat-card-content">Click on the title to check out our latest blog
-                    post to explore Tiny Llama's features and see how it can transform your AI experience while keeping
-                    your data private and secure.</p>
+                <a href="tiny-llama/" class="mat-card-title">Tiny Llama + AI Home Server</a>
+                <p class="mat-card-content"> The Tiny Llama service is an open-source platform that offers completely free access to advanced AI technologies such as image diffusion and large language models. It prioritizes privacy by keeping data on the user's device and aims to accelerate AI adoption by making it accessible and affordable.</p>
+            </div>
+        </div>
+        <div class="card-frame fitArticleWidth">
+            <img src="open-webui/open-webui.png" style="height: 64px; padding: 12px; align-self: center;" />
+            <div class="mat-card">
+                <a href="open-webui/" class="mat-card-title">Open WebUI</a>
+                <p class="mat-card-content">Open WebUI is an extensible, feature-rich, and user-friendly self-hosted WebUI designed to operate entirely offline. It supports various LLM runners, including Ollama and OpenAI-compatible APIs.</p>
+            </div>
+        </div>
+        <div class="card-frame fitArticleWidth">
+            <img src="swarmui/swarmui.png" style="height: 64px; padding: 12px; align-self: center;" />
+            <div class="mat-card">
+                <a href="swarmui/" class="mat-card-title">SwarmUI</a>
+                <p class="mat-card-content">SwarmUI is a modular Stable Diffusion WebUI, with an emphasis on making image generation powertools easily accessible, highly performant, and extensible.</p>
             </div>
         </div>
     </div>
@@ -53,10 +61,10 @@
 <footer class="mat-app-background"
     style="position: fixed; bottom: 0; left:12px; right:12px; padding: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; border-top: 1px solid var(--ir-border-color); font-weight: 500;">
     &copy; InsightReactions LLC. All rights reserved.
-    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+    <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
     <hr style="border: 0; border-right: 0px solid var(--ir-border-color);" />
     <span>
-        <img src="x-logo.svg" style="height: 10px;" alt="X Logo" />
+        <img src="../x-logo.svg" style="height: 10px;" alt="X Logo" />
         <a class="footer-link" href="https://twitter.com/TinyLlama_IR" style="margin-left: 0px;">@TinyLlama_IR</a>
     </span>
     <a class="footer-link" href="mailto:support@insightreactions.com">support@insightreactions.com</a>
