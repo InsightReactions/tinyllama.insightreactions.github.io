@@ -130,19 +130,23 @@
                 <p>To send a message, type it into the message field at the bottom of the window. You can also upload
                     documents for reference during the conversation by clicking on the &quot;+&quot; icon on the left
                     side of the message bar.</p>
-                <p>Note that due to memory limitations, Tiny Llama is limited to a 2048 token context window, which is
-                    roughly equivalent to 1,500 words in total, including the entirety of the conversation. In many
-                    cases, it's preferable to only copy and paste relevant sections of a document.</p>
+                <aside class="warning-card">
+                    Note that due to memory limitations, the Tiny Llama AI Home Server (2024) is limited to a 2048 token
+                    context window, which is roughly equivalent to 1,500 words in total, including the entirety of the
+                    conversation. In many cases, it's preferable to only copy and paste relevant sections of a document.
+                </aside>
                 <h3 id="step-4-submitting-messages">Step 4: Submitting Messages</h3>
                 <p>Once you've entered a message, click the up arrow to submit it to the LLM (Large Language Model).</p>
                 <aside class="warning-card">
-                    Please wait 10-15 seconds for the model to load into memory. Once loaded, the delay will be
-                    shortened to 1-2 seconds. The model will stay loaded in memory and waiting for responses for
+                    Please wait 5-10 seconds for the model to load into memory for the initial response. Once loaded,
+                    the delay will be
+                    shortened to less than 1 second. The model will stay loaded in memory and waiting for responses for
                     up to 5 minutes before freeing up that memory for other tasks.
                 </aside>
                 <h2 id="model-selection">Model Selection</h2>
                 <p>To select a model, click on the model name at the top of the chat window. You can choose from several
-                    options, and you can even select multiple models simultaneously to compare their responses.</p>
+                    options, and you can even select multiple models using the "+" sign to simultaneously to compare
+                    their responses.</p>
                 <h3 id="available-models">Available Models</h3>
                 <p>By default, Tiny Llama ships with these models available for selection:</p>
                 <h4 id="llama3">llama3</h4>
@@ -170,7 +174,8 @@
                 </ol>
                 <p><img src="image_response.png" class="fitImage" alt="Open WebUI image inference response"></p>
                 <aside class="warning-card">
-                    Keep in mind that while these models are improving at a fast rate, they're not perfect yet. However, you
+                    Keep in mind that while these models are improving at a fast rate, they're not perfect yet. However,
+                    you
                     can still get great assistance with interpreting textual content like labels or mixed-media images
                     that contain both text and image data. The more context you provide the model upfront, the better it
                     will be at understanding the scene and providing a helpful response.
@@ -211,7 +216,7 @@
                 <p><img src="image_gen_response.png" class="fitImage" alt="Open WebUI image generation icon"></p>
                 <aside class="warning-card">
                     The initial image generation may take up to 5-10 seconds depending on system utilization and prompt
-                    parameters. Subsequent generations typically complete within 2-5 seconds, as the diffusion model
+                    parameters. Subsequent generations typically complete within 4 seconds, as the diffusion model
                     remains in memory for up to 1 minute. After 1 minute, the diffusion model is unloaded to make room
                     for other models.
                 </aside>
