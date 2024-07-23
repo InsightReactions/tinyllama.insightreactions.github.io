@@ -23,8 +23,10 @@
 		<p
 			style="color: #006fee; margin-right: 5%; font-weight: 700; font-size: x-large; margin-bottom: 0; align-content: center; text-align: center; align-self: center;">
 			Tiny Llama</p>
-		<a class="header-link external" href="https://insightreactions.com/store" target="_blank" style="padding-left: 2%;">Store</a>
-		<div style="border: 0; border-right: 1px solid var(--ir-border-color); margin-left: 2%; margin-right: 2%;"></div>
+		<a class="header-link external" href="https://insightreactions.com/store" target="_blank"
+			style="padding-left: 2%;">Store</a>
+		<div style="border: 0; border-right: 1px solid var(--ir-border-color); margin-left: 2%; margin-right: 2%;">
+		</div>
 		<a class="header-link" href="../" style="padding-left: 2%;">Guides</a>
 		<div style="border: 0; border-right: 1px solid var(--ir-border-color); margin-left: 2%; margin-right: 2%;">
 		</div>
@@ -50,7 +52,8 @@
 							<li><a href="#powering-on-and-connecting">Powering On and Connecting</a></li>
 						</ul>
 					</li>
-					<li><a href="#exploring-tiny-llama-landing-page">Exploring the Tiny Llama Landing Page</a></li>
+					<li><a href="#exploring-the-tiny-llama-local-dashboard">Exploring the Tiny Llama Local Dashboard</a>
+					</li>
 				</ul>
 				<h2 id="ai-home-server-installation">AI Home Server Installation</h2>
 				<h3 id="unpacking-and-inspection">Unpacking and Inspection</h3>
@@ -65,7 +68,8 @@
 						</ul>
 					</li>
 				</ol>
-				<p><img src="figure1.jpg" alt="Tiny Llama AI Home Server, network cable, power cable, and optional Wi-Fi dongle"
+				<p><img src="figure1.jpg"
+						alt="Tiny Llama AI Home Server, network cable, power cable, and optional Wi-Fi dongle"
 						class="fitImage"></p>
 				<ol start="2">
 					<li>
@@ -97,14 +101,15 @@
 						Open a web browser of your choice on a device (desktop computer, laptop, or phone) and type
 						<a class="external" href="http://tinyllama.local" target="_blank">tinyllama.local</a> in the URL
 						bar and press Enter to access
-						the server's landing page. Feel free to bookmark this address; it is the primary method of
+						the Tiny Llama Local Dashboard. Feel free to bookmark this address; it is the primary method of
 						accessing the tools offered by Tiny Llama.
 					</li>
 				</ol>
 				<aside class="warning-card">
 					The <a class="external" href="http://tinyllama.local" target="_blank">tinyllama.local</a> address
 					will only work when connected to the same network as your Tiny Llama AI Home Server. If you are
-					unable to access this page, please ensure that both your device and the Tiny Llama AI Home Server
+					unable to access the dashboard, please ensure that both your device and the Tiny Llama AI Home
+					Server
 					are connected to the same local area network (LAN), and then try again.
 				</aside>
 				<aside class="warning-card">
@@ -112,65 +117,84 @@
 						target="_blank">tinyllama.local</a> address
 					is only possible from devices that support mDNS (Multicast DNS) resolution, which is not supported
 					by all operating systems or network configurations. If you are unable to access the server using
-					this method, you may connect using the IP address of your Tiny Llama AI Home Server, which can be
+					this method, you may try <a class="external" href="htp://tinyllama">http://tinyllama</a>, or with
+					the IP address of your Tiny Llama AI Home Server, which can be
 					found in the user interface of your network router's administration panel. Please refer to your
 					router's documentation for specific instructions on how to locate this information.
 					<br /><br />
 					Once you have the IP address, enter it into your web browser's URL bar and press Enter to access the
-					server's landing page.
+					Tiny Llama Local Dashboard.
 				</aside>
 				<aside class="warning-card">
-					Wireless network connectivity with the Wi-Fi dongle requires additional configuration. To use the dongle, please 
-					connect a monitor, keyboard, and mouse to the server, power it on, login (password: tinyllama) and follow 
-					this <a class="external" href="https://linuxconfig.org/setup-wireless-interface-with-wpa-and-wpa2-on-ubuntu" target="_blank">Ubuntu Wi-Fi Setup Guide</a>.
+					Wireless network connectivity with the Wi-Fi dongle requires additional configuration. To use the
+					dongle, please
+					connect a monitor, keyboard, and mouse to the server, power it on, login (password: tinyllama) and
+					follow
+					this <a class="external"
+						href="https://linuxconfig.org/setup-wireless-interface-with-wpa-and-wpa2-on-ubuntu"
+						target="_blank">Ubuntu Wi-Fi Setup Guide</a>.
 					The use of the dedicated network cable is recommended to avoid network disconnections/disruptions.
 				</aside>
-				<h2 id="Exploring Tiny Llama Landing Page">Exploring the Tiny Llama Landing Page</h2>
+				<h2 id="exploring-the-tiny-llama-local-dashboard">Exploring the Tiny Llama Local Dashboard</h2>
 				<p>Upon your first visit to <a class="external" href="http://tinyllama.local"
-						target="_blank">tinyllama.local</a> landing page, you'll be greeted by an "Announcements and
+						target="_blank">tinyllama.local</a> dashboard, you'll be greeted by an "Announcements and
 					Updates"
 					window. This window provides important information about new features and updates. It will only
 					appear once, and then reappear when there are updates. Click or tap "Close" to dismiss this window.
 				</p>
-				<p>The Landing Page serves as the central hub for all the tools and services offered by Tiny Llama. The
-					top bar includes links to various sections:</p>
+				<p>The Tiny Llama Local Dashboard serves as the central hub for all the tools and services offered by
+					Tiny Llama:</p>
+				<img src="figure4.png" alt="Figure 4">
+				<p>Following the guidance in the image above:</p>
+				<ol>
+					<li>Visit the InsightReactions Store</li>
+					<li>View comprehensive guides for Tiny Llama and third-party AI Plugins on the Tiny Llama Local
+						Dashboard</li>
+					<li>Discover the latest news for the Tiny Llama product line.</li>
+					<li>Visit GitHub to discuss Tiny Llama with other users and the InsightReaction team.</li>
+					<li>This is the add/remove button for an AI Plugin. When the AI Plugin is installed, it will appear
+						as a encircled minus sign, signifying the "uninstall" action. When it appears as an encircled
+						plus sign, the action signifies the "install" action. </li>
+					<aside class="warning-card">
+						Please use an internet source that has a generous data usage policy when adding/removing AI
+						Plugins or when perfoming an update, and allow several
+						minutes for the action to complete -- AI Plugins are downloaded from the internet and are often
+						significant in size (gigabytes).
+					</aside>
+					<li>The start/stop button for an AI Plugin. When the button shows the "play" symbol, the AI Plugin
+						service is in the "stopped" state, and can be started.</li>
+					<li>When the button shows a "Stop" symbol, the AI Plugin service is in the "active" state, and can
+						be stopped.</li>
+					<li>Click on an AI Plugin title to navigate to each respective service.</li>
+					<li>View the amount of used Video Random-Access Nemory (VRAM) out of the total amount available.
+						This value is updated once per second and is a useful proxy for total system utilization.</li>
+				</ol>
+				<h3 id="available-ai-plugins">Available AI Plugins</h3>
 				<ul>
-					<li><strong>Guides</strong>: This link leads to a section of this website that hosts basic/advanced
-						guides and
-						tutorials for using Tiny Llama and associated generative AI services.</li>
-					<li><strong>News</strong>: This is a section of this website that covers developments in
-						technologies that impact
-						Tiny Llama.</li>
-					<li><strong>Discuss</strong>: Registered users can provide feedback and report issues on the Tiny
-						Llama GitHub
-						Discussions page.</li>
-					<li><strong>About</strong>: This link leads to the InsightReactions company website, which provides
-						information about our core values, motivations, and vision for the product.</li>
-				</ul>
-				<p>Below these links, you'll find links that take you to generative AI services hosted by the Tiny Llama
-					platform on your local device:</p>
-				<ul>
-					<li><strong>Open WebUI</strong>: This is an extensible, feature-rich, and user-friendly self-hosted
+					<li><strong>Open WebUI:</strong> This is an extensible, feature-rich, and user-friendly self-hosted
 						web-based AI chat interface designed for offline operation. It supports various LLM runners,
 						including Ollama and OpenAI-compatible APIs.</li>
-					<li><strong>SwarmUI</strong>: This is a modular Stable Diffusion web-based image generation
+					<li><strong>SwarmUI:</strong> This is a modular Stable Diffusion web-based image generation
 						interface that emphasizes making AI power tools easily accessible, performant, and extensible.
 					</li>
 				</ul>
+				<p>Plus many more to come! InsightReactions is dedicated to bringing you the latest in Generative AI
+					technologies. Our offerings will expand over time at no cost to our Tiny Llama users.</p>
 			</div>
 		</div>
 	</div>
 </body>
 
 <footer class="mat-app-background"
-    style="position: fixed; bottom: 0; left:12px; right:12px; padding: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; border-top: 1px solid var(--ir-border-color); font-weight: 500;">
-    &copy; InsightReactions LLC. All rights reserved.
-    <a href="https://insightreactions.com/privacy.html" class="footer-link">Privacy Policy</a>
-    <hr style="border: 0; border-right: 0px solid var(--ir-border-color);" />
-    <span>
-        <img src="/x-logo.svg" style="height: 10px;" alt="X Logo" />
-        <a class="footer-link" href="https://twitter.com/TinyLlama_IR" style="margin-left: 0px;">@TinyLlama_IR</a>
-    </span>
-    <a class="footer-link" href="mailto:support@insightreactions.com">support@insightreactions.com</a>
+	style="position: fixed; bottom: 0; left:12px; right:12px; padding: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; border-top: 1px solid var(--ir-border-color); font-weight: 500;">
+	&copy; InsightReactions LLC. All rights reserved.
+	<a href="https://insightreactions.com/privacy.html" class="footer-link">Privacy Policy</a>
+	<hr style="border: 0; border-right: 0px solid var(--ir-border-color);" />
+	<span>
+		<img src="/x-logo.svg" style="height: 10px;" alt="X Logo" />
+		<a class="footer-link" href="https://twitter.com/TinyLlama_IR" style="margin-left: 0px;">@TinyLlama_IR</a>
+	</span>
+	<a class="footer-link" href="mailto:support@insightreactions.com">support@insightreactions.com</a>
 </footer>
+
 </html>
