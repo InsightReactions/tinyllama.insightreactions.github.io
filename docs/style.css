@@ -2388,10 +2388,10 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .fitArticleWidth {
-  width: 50%;
+  width: 960px;
 
-  @media (max-width: 1300px) {
-      width: 80%;
+  @media (max-width: 1020px) {
+      width: 95%;
   }
 }
 
