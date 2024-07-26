@@ -1,0 +1,64 @@
+---
+title: Tiny Llama | Refining Images with SwarmUI - A Guide to Upscaling and Enhancing Your Photos
+description: Learn how to use the refiner in SwarmUI to upscale your images, improve resolution, and enhance details without losing quality. Discover the best settings, methods, and models for achieving stunning results.
+layout: default
+---
+<h1 id="working-with-refiners">Working with Refiners</h1>
+<div class="card-frame">
+  <div class="mat-card">
+    <h2 id="table-of-contents">Table of Contents</h2>
+    <ul class="toc">
+      <li><a href="#working-with-refiners">Working with Refiners</a></li>
+      <li><a href="#refiner-parameters">Refiner Parameters</a></li>
+      <li><a href="#try-it-out">Try It Out</a>
+    </ul>
+    <p>In this guide, we'll talk about the refiner in SwarmUI, also known as image upscaling or &quot;high-res
+      fix.&quot;
+      Refiners allow you to upscale your images to higher resolutions without losing detail.</p>
+    <p>If you haven't read the Getting Started with SwarmUI guide, we recommend you read that prior to reading this, as
+      it
+      covers the fundamentals.</p>
+    <h2 id="refiner-parameters">Refiner Parameters</h2>
+    <p>The refiner is simple to use. Expand the Refiner setting on the left-hand side.</p>
+    <p><img class="fitImage" style="max-width:424px; height:auto;" src="refiner_tab.png" alt="Default refiner settings">
+    </p>
+    <p>Let's look at some parameters:</p>
+    <ul>
+      <li>Refiner Model: Which model to use. This is best left on the default setting &quot;(Use Base)&quot; unless you
+        have
+        a specific reason to change it.</li>
+      <li>Refiner Control Percentage: How much control you're letting the refiner have over your original image. A
+        higher
+        value means more control, a lower value means less control. This value is important and you will need to
+        experiment
+        with it to achieve the best results.</li>
+      <li>Refiner Method: How the refiner is applied to the image. Default setting is &quot;PostApply,&quot; meaning
+        that
+        the refiner will be applied on the finished image. The other settings apply the refiner during the generation of
+        the
+        original image. The default setting works great for most cases.</li>
+      <li>Refiner Upscale: Another crucial setting is how much you want to upscale the image. Best values are 1.5x and
+        2x,
+        but it can go all the way to 4x and beyond. Tiny Llama can upscale up to 2x, but you may run into resource
+        constraints after a certain point.</li>
+      <li>Refiner Upscale Method: The upscale method has arguably the greatest effect on your upscaled image. SwarmUI
+        provides several methods by default, however they may not produce the best results. We've provided a popular
+        community refiner called '4x-UltraSharp' which will deliver far greater results.</li>
+    </ul>
+    <h2 id="try-it-out">Try It Out</h2>
+    <p>Let's refine an image. Here's some parameters:</p>
+    <ul>
+      <li>Refiner Model: (Use Base)</li>
+      <li>Refiner Control Percentage: 0.4</li>
+      <li>Refiner Method: PostApply</li>
+      <li>Refiner Upscale: 2</li>
+      <li>Refiner Upscale Method: 4xUltrasharp_4xUltrasharpV10.pt</li>
+    </ul>
+    <p>I already have a picture I want to try:</p>
+    <p><img class="fitImage" src="normal_image.png" alt="Image before upscaling"></p>
+    <p>Make sure the refiner is enabled with that slider toggled and hit Generate when you're ready.</p>
+    <p>Here's the result:</p>
+    <p><img class="fitImage" src="upscaled_image.png" alt="Image after upscaling"></p>
+    <p>Now that is one fine-looking gentleman!</p>
+  </div>
+</div>
