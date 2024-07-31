@@ -1,0 +1,97 @@
+---
+title: Tiny Llama | Allow Microphone Access in Open-WebUI - Troubleshooting Guide
+description: Enable microphone access in Open-WebUI with step-by-step fixes for common browsers.
+---
+<h1 id="allow-microphone-in-open-webui">Allow Microphone in Open-WebUI</h1>
+<div class="card-frame">
+  <div class="mat-card">
+    <h2 id="table-of-contents">Table of Contents</h2>
+    <ul class="toc">
+      <li><a href="#allow-microphone-in-open-webui">Allow Microphone in Open-WebUI</a></li>
+      <li><a href="#why-is-microphone-access-disabled-by-default">Why is Microphone Access Disabled by Default?</a></li>
+      <li><a href="#fixes-for-common-browsers">Fixes for Common Browsers</a></li>
+      <li><a href="#example-microsoft-edge">Example: Microsoft Edge</a>
+    </ul>
+    <p>You may have seen this error message when trying to use voice recognition features in Open-WebUI:</p>
+    <p><img src="microphone_permission_denied.png" alt="Permission denied error"></p>
+    <p>In this guide, we'll teach you how to allow microphone access for Open-WebUI. This will enable you to use voice
+      recognition features within the application, such as Speech-To-Text (STT).</p>
+    <h2 id="why-is-microphone-access-disabled-by-default">Why is Microphone Access Disabled by Default?</h2>
+    <p>The reason why microphone access is disabled by default is due to built-in security measures in browsers that
+      block
+      websites from accessing your microphone without explicit permission. Only enable microphone access if you access
+      the
+      application within your own local network or over a VPN, as it may pose a privacy risk when accessed over public
+      networks.</p>
+    <p>Configuration will vary depending on your browser and operating system. You must configure your browser to treat
+      the
+      website as secure (https) in order for the microphone to work.</p>
+    <h2 id="fixes-for-common-browsers">Fixes for Common Browsers</h2>
+    <p>The table below provides general instructions for some popular browsers:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Browser</th>
+          <th>Instructions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chrome/Chromium</td>
+          <td><a
+              href="https://stackoverflow.com/questions/34883621/chrome-flag-for-unsafely-treat-insecure-origin-as-secure">StackOverflow</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Firefox</td>
+          <td>Unsupported</td>
+        </tr>
+        <tr>
+          <td>Opera</td>
+          <td><a
+              href="https://stackoverflow.com/questions/34883621/chrome-flag-for-unsafely-treat-insecure-origin-as-secure">StackOverflow
+              (use &quot;opera://flags&quot; instead of &quot;chrome://flags&quot;)</a></td>
+        </tr>
+        <tr>
+          <td>Safari</td>
+          <td>Unsupported</td>
+        </tr>
+        <tr>
+          <td>Vivaldi</td>
+          <td><a href="https://forum.vivaldi.net/topic/79419/whitelist-for-intranet-http-sites/4">Vivaldi Forum</a></td>
+        </tr>
+        <tr>
+          <td>Edge</td>
+          <td><a
+              href="https://learn.microsoft.com/en-us/answers/questions/621757/how-to-get-rid-of-not-secure-mark-in-edge-browser">Microsoft
+              Forum (first answer, option 2)</a></td>
+        </tr>
+        <tr>
+          <td>Brave</td>
+          <td><a href="https://community.brave.com/t/removing-secure-window-in-url-bar/451202/6">Brave Forum (post
+              6)</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Please note that these instructions are general and may not be accurate for your specific setup or version of the
+      browser. If you're having trouble, it might be helpful to search online for more specific instructions based on
+      your
+      exact situation.</p>
+    <h1 id="example-microsoft-edge">Example: Microsoft Edge</h1>
+    <p>Here is an example of how to allow microphone access in Microsoft Edge, with a placeholder for the IP address:
+    </p>
+    <ol>
+      <li>In Edge, type &quot;edge://flags/&quot; into the URL bar and press Enter.</li>
+      <li>Search for &quot;Insecure origins treated as secure&quot;.</li>
+      <li>Enter the Tiny Llama IP address (e.g., <code>http://192.168.0.52:8080</code>) in the text box next to this
+        option,
+        then click Enable.
+        Note: You must include &quot;http&quot; at the beginning of the URL and specify port &quot;:8080&quot;.</li>
+    </ol>
+    <p><img src="edge_permission_example.png" alt="Edge Permission Example"></p>
+    <ol start="4">
+      <li>Restart Edge for changes to take effect.</li>
+    </ol>
+  </div>
+</div>
