@@ -25,7 +25,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   Learn how it empowers users with seamless image generation and intelligent conversations from the comfort of your own home.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tinyllama.insightreactions.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: TinyLlama_IR
 # Build settings
 theme: minima
 plugins:
