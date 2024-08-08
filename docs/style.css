@@ -3495,6 +3495,7 @@ html {
   /* This is so that we can absolutely position the symbol */
   border: 1px solid var(--ir-border-color);
   border-radius: 3px;
+  max-width: 747px;
 }
 
 .warning-card::before,
@@ -3556,4 +3557,26 @@ a[download]::after {
   align-items: center;
   justify-content: center;
   gap: 12px;
+}
+
+progress {
+  border: 1px solid var(--ir-border-color);
+  border-radius: 6px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: var(--ir-background2-color);
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--ir-primary-color);
+  border-radius: 6px;
+}
+
+button {
+  border-radius: 6px;
+}
+
+.primary-button {
+  color: var(--ir-primary-color);
 }
