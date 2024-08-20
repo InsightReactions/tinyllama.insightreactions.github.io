@@ -2,83 +2,109 @@
 title: Getting Started with SwarmUI | Tiny Llama
 description: Learn how to generate images with SwarmUI, a powerful image generation interface. Get started with basic parameters, available models, and more.
 ---
-<h1 id="getting-started-with-swarmui">Getting Started with SwarmUI</h1>
+<h1 id="getting-started-with-swarmui">Getting Started with SwarmUI: A Comprehensive Guide</h1>
 <div class="card-frame">
     <div class="mat-card">
-            <h2 id="table-of-contents">Table of Contents</h2>
-            <ul class="toc">
-                <li><a href="#getting-started-with-swarmui">Getting Started with SwarmUI</a></li>
-                <li><a href="#general-layout">General Layout</a></li>
-                <li><a href="#basic-parameters">Basic Parameters</a>
-                    <ul>
-                        <li><a href="#core-parameters">Core Parameters</a></li>
-                        <li><a href="#varation-seed">Variation Seed</a></li>
-                        <li><a href="#resolution">Resolution</a></li>
-                        <li><a href="#sampling">Sampling</a></li>
-                        <li><a href="#other-parameters">Other Parameters</a></li>
-                    </ul>
-                </li>
-                <li><a href="#available-models">Available Models</a></li>
-                <li><a href="#generate-your-first-image">Generate Your First Image</a></li>
-                <li><a href="#conclusion">Conclusion</a></li>
-            </ul>
-            <p>In this guide, we will walk you through the basics of using SwarmUI, a powerful and versatile image generation interface. We'll also touch on some fundamental Stable Diffusion concepts, the core technology of image generation.</p>
-            <p>To get started, navigate to the tinyllama.local landing page and click on &quot;SwarmUI&quot; to access the service.</p>
-            <h2 id="general-layout">General Layout</h2>
-            <p>When you first load SwarmUI, you will be greeted with many options. This guide aims to cover the basics:</p>
-            <ul>
-                <li>The top of the interface contains different tabs. We're only concerned with the Generate tab in this guide.</li>
-                <li>The left-hand region contains Stable Diffusion parameters.</li>
-                <li>The center region contains the generated image output and prompt, as well as the Generate button.</li>
-                <li>The right-hand region displays images batch images (generating multiple images with a single click).</li>
-                <li>The bottom of the interface contains even more settings, generally meant for managing and applying add-ons (such as VAEs, LoRAs, etc.) It also contains your model selection and Image History.</li>
-            </ul>
-            <h2 id="basic-parameters">Basic Parameters</h2>
-            <p>In this section, we'll go over some basic functionality of SwarmUI's different parameters in the left-hand pane.</p>
-            <h3 id="core-parameters">Core Parameters</h3>
-            <p>Look for Core Parameters in the left-hand pane and expand it if it isn't already.</p>
-            <ul>
-                <li>Images: How many images to generate at once.</li>
-                <li>Seed: The seed determines the appearance of the image. A value of -1 is a random seed, but it can be specified manually. The seed is useful when you have an image you like, and want to refine it. To reuse the same seed, simply click the Reuse button (highlighted in red below). If you'd like to use random seeds, click the button next to the Reuse button (looks like a dice).</li>
-            </ul>
-            <p><img src="reuse_button.png" class="fitImage" alt="Seed buttons"></p>
-            <ul>
-                <li>Steps: How many times the Stable Diffusion model is ran for a given set of noise. Stable Diffusion works by turning random noise (determined by the seed) into an image guided by the prompt. Generally, more steps are better, but you will encounter diminishing returns at a certain amount of steps.</li>
-                <li>CFG Scale: The CFG scale tells the Stable Diffusion model how well to adhere to your prompt. A lower CFG Scale allows the model to be more creative, and a higher value forces the model to follow your prompt more strictly. A good range is 4-12.</li>
-            </ul>
-            <h3 id="variation-seed">Variation Seed</h3>
-            <p>A variation seed is useful when you'd like an image, but want to add randomness to it. To use it, you can click the slider to enable it (pictured below) and enter a value for the Variation Seed Strength. 0.1-0.5 is a safe range of values.</p>
-            <p><img src="enable_slider.png" class="fitImage" alt="Enable Slider"></p>
-            <h3 id="resolution">Resolution</h3>
-            <p>You can configure SwarmUI to generate images specific resolutions. You can enter an exact pixel-by-pixel value, or select a ratio. For a desktop wallpaper, for instance, you could select 16:9. Some models work better with certain resolutions, but they are flexible in general.</p>
-            <h3 id="sampling">Sampling</h3>
-            <p>Samplers are a fundamental component of Stable Diffusion. Which sampler you choose to use is generally a matter of preference, but some models work better with certain samplers.</p>
-            <ul>
-                <li>Sampler: The default sampler, Euler Ancestral, is fine for most use cases.</li>
-                <li>Scheduler: A scheduler alters the way the chosen sampler works. Schedulers have very specific use cases, so Normal is good to start with.</li>
-            </ul>
-            <h3 id="other-parameters">Other Parameters</h3>
-            <p>The rest of the basic parameters (Init Image, Refiner, ControlNet, and Video) are considered outside the scope of this starter guide, but they are (or will be) covered in other more in-depth guides.</p>
-            <h2 id="available-models">Available Models</h2>
-            <p>Different Stable Diffusion models offer unique styles and capabilities. We provide two models:</p>
-            <ul>
-                <li>CyberRealistic: Stable Diffusion 1.5 model suited for realistic images.</li>
-                <li>DreamShaperXL: Stable Diffusion XL model providing a wide range of art styles.</li>
-            </ul>
-            <p>CyberRealistic and DreamShaperXL are based on different Stable Diffusion versions. Basically, CyberRealistic (SD 1.5) is a faster model but with lower general quality, while DreamShaperXL (SDXL) is a slower model with higher general quality. They also require different settings, but fortunately, SwarmUI takes care of this automatically.</p>
-            <h3 id="changing-the-model">Changing the Model</h3>
-            <p>To change your Stable Diffusion model, simply expand the model selection in the lower left-hand corner of the interface (pictured below).</p>
-            <p><img src="model_selection.png" class="fitImage" alt="Model Selection"></p>
-            <h2 id="generate-your-first-image">Generate Your First Image</h2>
-            <p>Now that you're familiar with the general layout and basic parameters, let's go ahead and generate your first image. The default parameters provided work fine for this example.</p>
-            <ol>
-                <li>In the center region, you'll see two text boxes; these are your Positive and Negative prompts. Put stuff you want to see in the Positive prompt, and stuff you don't want to see in the Negative prompt. The prompts will be prepended by &quot;best quality&quot; and &quot;low quality,&quot; respectively. These are to tell the model to give us better quality outputs. Keep these first and foremost in your prompts.</li>
-                <li>Let's say we want to generate an image of a cat wearing a wizard hat. Simply type &quot;cat wearing a wizard hat&quot; after &quot;best quality.&quot; Separate concepts in your prompt with commas.</li>
-                <li>Hit generate!</li>
-            </ol>
-            <p><img src="wizard_cat.png" class="fitImage" alt="Picture of a cat wearing a wizard hat"></p>
-            <h2 id="conclusion">Conclusion</h2>
-            <p>Stable Diffusion is a very powerful technology, and SwarmUI helps take advantage of it. We've barely scratched the surface here, but this basic knowledge is essential for generating images with SwarmUI. If you're wondering what a specific setting does, click the question mark ('?') next to it for a short description.</p>
-        </div>
+        <h2 id="table-of-contents">Table of Contents</h2>
+        <ul class="toc">
+            <li><a href="#getting-started-with-swarmui">Getting Started with SwarmUI</a></li>
+            <li><a href="#general-layout">General Layout and Features</a></li>
+            <li><a href="#basic-parameters">Understanding Basic Parameters</a>
+                <ul>
+                    <li><a href="#core-parameters">Core Parameters and Settings</a></li>
+                    <li><a href="#variation-seed">Variation Seed: Introducing Randomness to Images</a></li>
+                    <li><a href="#resolution">Image Resolution Options</a></li>
+                    <li><a href="#sampling">Sampling Methods for Image Generation</a></li>
+                    <li><a href="#other-parameters">Additional Parameters and Settings</a></li>
+                </ul>
+            </li>
+            <li><a href="#available-models">Selecting the Optimal Stable Diffusion Model</a></li>
+            <li><a href="#generate-your-first-image">Generating Your First Image with SwarmUI</a></li>
+            <li><a href="#conclusion">Conclusion: Mastering SwarmUI for Efficient Image Generation</a></li>
+        </ul>
+        <p>In this comprehensive guide, we will walk you through the fundamental principles and features of using
+            SwarmUI, a versatile image generation interface. Additionally, we will delve into the core concepts of
+            Stable Diffusion technology, which powers image creation.</p>
+        <p>To begin, navigate to the <a href="http://tinyllama.local">tinyllama.local</a> landing page and access the SwarmUI service by clicking on the
+            "SwarmUI" tab.</p>
+        <h2 id="general-layout">Understanding General Layout and Features</h2>
+        <p>Upon loading SwarmUI, you will be presented with a user-friendly interface featuring various tabs and
+            settings. This guide aims to cover the essential aspects:</p>
+        <ul>
+            <li>The top section contains different tabs, with the "Generate" tab being our primary focus.</li>
+            <li>The left-hand region displays Stable Diffusion parameters, which can be expanded for further
+                customization.</li>
+            <li>The central region showcases the generated image output and prompt, accompanied by a "Generate" button.
+            </li>
+            <li>The right-hand region allows for batch image generation with a single click.</li>
+            <li>The bottom section provides additional settings, including model selection and Image History, which can
+                be used to refine your image creation process.</li>
+        </ul>
+        <h2 id="basic-parameters">Understanding Basic Parameters</h2>
+        <p>In this section, we will explore the fundamental parameters available in SwarmUI's left-hand pane.</p>
+        <h3 id="core-parameters">Core Parameters and Settings</h3>
+        <p>Locate the "Core Parameters" section and expand it for access to essential settings:</p>
+        <ul>
+            <li>Images: Specify the number of images to generate simultaneously.</li>
+            <li>Seed: Utilize a random seed or manually specify one to achieve consistent image results. The Reuse
+                button can be used to preserve the same seed for future generations.</li>
+        </ul>
+        <p><img src="reuse_button.png" class="fitImage" alt="Seed buttons"></p>
+        <ul>
+            <li>Steps: Determine the number of times the Stable Diffusion model is executed for a given set of noise.
+                Increasing steps can lead to improved image quality, but diminishing returns may occur at higher values.
+            </li>
+            <li>CFG Scale: Adjust the CFG scale to control how closely the model adheres to your prompt. A lower value
+                encourages creativity, while a higher value enforces strict adherence.</li>
+        </ul>
+        <h3 id="variation-seed">Variation Seed: Introducing Randomness to Images</h3>
+        <p>Use the variation seed to introduce randomness to your image generation process. Enable the slider and
+            specify a value for the Variation Seed Strength, within the recommended range of 0.1-0.5.</p>
+        <p><img src="enable_slider.png" class="fitImage" alt="Enable Slider"></p>
+        <h3 id="resolution">Image Resolution Options</h3>
+        <p>Configure SwarmUI to generate images at specific resolutions by entering an exact pixel-by-pixel value or
+            selecting a ratio. Some models may perform better with particular resolutions, but flexibility is generally
+            maintained.</p>
+        <h3 id="sampling">Sampling Methods for Image Generation</h3>
+        <p>Samplers are a fundamental component of Stable Diffusion technology. Selecting the optimal sampler can
+            significantly impact image quality and creativity. Consider the following options:</p>
+        <ul>
+            <li>Sampler: The default Euler Ancestral sampler is suitable for most use cases.</li>
+            <li>Scheduler: Schedulers modify the behavior of the chosen sampler, and their usage is generally
+                application-specific.</li>
+        </ul>
+        <h3 id="other-parameters">Additional Parameters and Settings</h3>
+        <p>The remaining basic parameters (Init Image, Refiner, ControlNet, and Video) are not addressed in this guide,
+            but will be covered in more detail in separate guides.</p>
+        <h2 id="available-models">Selecting the Optimal Stable Diffusion Model</h2>
+        <p>SwarmUI offers two pre-trained models tailored for various image creation tasks:</p>
+        <ul>
+            <li>CyberRealistic: A Stable Diffusion 1.5 model ideal for generating realistic images.</li>
+            <li>DreamShaperXL: A Stable Diffusion XL model providing a wide range of art styles and creative
+                possibilities.</li>
+        </ul>
+        <p>These models are based on different Stable Diffusion versions, with CyberRealistic (SD 1.5) being a faster
+            option but with lower overall quality, and DreamShaperXL (SDXL) offering higher image quality at the cost of
+            increased processing time. Fortunately, SwarmUI automatically adjusts settings for each model.</p>
+        <h3 id="changing-the-model">Switching Between Models</h3>
+        <p>To change your Stable Diffusion model, simply expand the model selection in the lower left-hand corner of the
+            interface (pictured below).</p>
+        <p><img src="model_selection.png" class="fitImage" alt="Model Selection"></p>
+        <h2 id="generate-your-first-image">Generating Your First Image with SwarmUI</h2>
+        <p>Now that you're familiar with the general layout and basic parameters, let's create your first image using
+            SwarmUI. The default settings provided work fine for this example.</p>
+        <ol>
+            <li>In the center region, enter your Positive and Negative prompts in the text boxes. Place relevant details
+                in the Positive prompt and unwanted elements in the Negative prompt. These will be prepended with "best
+                quality" and "low quality," respectively, to guide the model towards optimal image creation.</li>
+            <li>For this example, let's generate an image of a cat wearing a wizard hat. Type "cat wearing a wizard hat"
+                after "best quality." Separate concepts in your prompt with commas.</li>
+            <li>Click the Generate button to initiate image generation.</li>
+        </ol>
+        <p><img src="wizard_cat.png" class="fitImage" alt="Picture of a cat wearing a wizard hat"></p>
+        <h2 id="conclusion">Conclusion: Mastering SwarmUI for Efficient Image Generation</h2>
+        <p>Stable Diffusion technology and SwarmUI provide a powerful combination for image generation. This guide has
+            covered the essential aspects, but there's more to explore. Feel free to ask questions by clicking the '?'
+            button next to each setting for a brief description.</p>
     </div>
 </div>
