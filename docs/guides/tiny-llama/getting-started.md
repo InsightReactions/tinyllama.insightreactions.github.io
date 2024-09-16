@@ -64,13 +64,13 @@ Following the guidance in the image above:
 3. Discover the latest news for the Tiny Llama product line.
 4. Visit GitHub to discuss Tiny Llama with other users and the InsightReaction team.
 5. This is the add/remove button for an AI Plugin. When the AI Plugin is installed, it will appear as a encircled minus sign, signifying the "uninstall" action. When it appears as an encircled plus sign, the action signifies the "install" action.
-
-    > **Warning:** Please use an internet source that has a generous data usage policy when adding/removing AI Plugins or when perfoming an update, and allow several minutes for the action to complete -- AI Plugins are downloaded from the internet and are often significant in size (gigabytes).
-
 6. The start/stop button for an AI Plugin. When the button shows the "play" symbol, the AI Plugin service is in the "stopped" state, and can be started.
 7. When the button shows a "Stop" symbol, the AI Plugin service is in the "active" state, and can be stopped.
 8. Click on an AI Plugin title to navigate to each respective service.
 9. View the amount of used Video Random-Access Memory (VRAM) out of the total amount available. This value is updated once per second and is a useful proxy for total system utilization.
+
+{: .warning }
+Consider using an internet source that has a generous data usage policy when adding/removing AI Plugins or when perfoming an update, and allow several minutes for the action to complete -- AI Plugins are downloaded from the internet and are often significant in size (gigabytes).
 
 ## Available AI Plugins
 - **Amica:** Amica is an open-source interface that enables effortless interaction with 3D characters, powered by voice synthesis and speech recognition. Our platform makes it remarkably easy to set up lifelike 3D avatars in your world. With advanced features like seamless transcription, natural text-to-speech, expressive animations, and vision capabilities, Amica raises the standard for digital interactions.
