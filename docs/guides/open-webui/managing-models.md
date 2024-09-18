@@ -19,10 +19,10 @@ This guide will walk you through the process of managing LLMs (Large Language Mo
 
 To find a suitable model for your needs, visit the [Ollama Library](https://ollama.ai/library). You can search for specific models or browse through categories. Take note of the name used in the run block and select the appropriate tag.
 
-As an example for this guide, we will use `qwen2-math:7b-instruct` to provide math-related instructions. See the image below for a visual on how to identify the run tag.
+As an example for this guide, we will use `qwen2-math:7b-instruct` to enhance Open WebUI's capabilities with the ability to answer math-related inquiries. See the image below for a visual on how to identify the run tag.
 
-![A screenshot of the Ollama library showing a search for "qwen2-math" with the model "qwen2-math:7b-instruct" highlighted](./ollama_run_tag.png)
-<span style="color: gray; font-size: smaller; padding: 6px; display: block;">A screenshot of the Ollama library showing a search for "qwen2-math" with the model "qwen2-math:7b-instruct" highlighted</span>
+![A screenshot of the Ollama library showing a search for "qwen2-math" with the model run tag "qwen2-math:7b-instruct" highlighted](./ollama_run_tag.png)
+<span style="color: gray; font-size: smaller; padding: 6px; display: block;">A screenshot of the Ollama library showing a search for "qwen2-math" with the model run tag "qwen2-math:7b-instruct" highlighted</span>
 
 ### Understanding Model Identifiers
 
@@ -41,30 +41,38 @@ When deciding which model tag to select, consider the following components of th
 *   **chat**: Suitable for engaging conversations with multiple turns. This is the **recommended** mode for use within Open WebUI.
 *   **text**: Ideal for 1-turn text generation tasks such as summarization and translation, or continuation of existing content. Not suitable for the Open WebUI chat.
 *   **code**: Models trained to understand and generate code within IDEs. Not suitable for the Open WebUI chat.
+*   **vision/LVM**: Models that can interpret visual data (images) in addition to textual input. Most of the popular vision models are supported by Open WebUI.
 
 #### Quantization Methods
 
 To reduce model size without significantly impacting performance, quantization methods are used:
 
-*   **q2_0**, **q4_0**, **q8_0**: Varying levels of quantization that balance memory usage and computational efficiency. Each qX value represents the number of bits allocated for each weight in the model.
-*   **K_S**, **K_M**, **K_L**: Different kernel sizes used in quantization, ranging from small to large.
+*   **qX_Y**: Varying levels of quantization that balance memory usage and computational efficiency. 
+    *   Each `qX` value represents the number of bits allocated for each weight in the model. A lower value results in a smaller model size but may lead to a decrease in performance. 
+    *   The `_Y` suffix refers to bit shifting the weights, which may improve performance for certain quanitization levels. The suffix can be safe to ignore if you are not an advanced user, and is often ommitted in newer models in favor of the k-means clustering method, `K_X`.
+*   **K_X**: The `K` indicates that k-means clustering was used to optimize model representation. This technique groups similar weights together and replaces them with a single, more compact value. The `_X` component reflects the level of compression achieved through this process:
+    *   `_S`: Severe compression (high reduction in model size)
+    *   `_M`: Moderate compression (medium reduction in model size)
+    *   `_L`: Light compression (low reduction in model size)
 
 #### Quantization Performance
 
-For a good balance between model size and performance, 4-bit quantization (q4_0) is recommended. However, you may consider the following settings based on your specific needs:
+For a good balance between model size and performance, 4-bit quantization (q4) is recommended. However, you may consider the following settings, among many others, based on your specific needs:
 
 | Quantization Setting | Size (G) @ 7B | PPL @ 7B | Notes                                       |
 |---------------------|---------------|-----------------|---------------------------------------------|
 | Q2_K                 | 2.67          | +0.8698         | Smallest, extreme quality loss - not recommended |
+| Q3_K_S               | 2.75          | +0.5505         | very small, very high quality loss |
 | Q3_K_M               | 3.06          | +0.2437         | very small, very high quality loss |
+| Q3_K_L               | 3.35          | +0.1803         | small, substantial quality loss |
 | Q4_K_M               | 3.80          | +0.0535         | Medium, balanced quality - **recommended**    |
 | Q8_0                 | 6.70          | +0.0004         | Very large, extremely low quality loss - recommended only for complex tasks |
 | FP16                 | 13.00         |                 | Extremely large, virtually no quality loss - not recommended |
 
-<span style="color: gray; font-size: smaller; padding: 6px; display: block;">Source: [llama.cpp discussion](https://github.com/ggerganov/llama.cpp/discussions/2094#discussioncomment-6351796)</span>
+<span style="color: gray; font-size: smaller; padding: 6px; display: block;">See the source of this table for additional information: [llama.cpp discussion](https://github.com/ggerganov/llama.cpp/discussions/2094#discussioncomment-6351796)</span>
 
 {: .note }
-Perplexity (PPL) is a measure of a language model's confidence in its predictions, indicating how certain it is about its next word predictions. Lower perplexity values suggest higher certainty, while higher values indicate lower certainty. It is important to note that certainty ≠ correctness, as a model can be very confident but still produce predictions that are not factual or accurate.
+Perplexity (PPL) is a measure of a language model's confidence in its predictions, indicating how certain it is about its next word predictions. Lower perplexity values suggest higher certainty, while higher values indicate lower certainty. It is important to note that certainty ≠ correctness, as a model can be very confident but still produce predictions that are not factual or accurate, depending on the context and the data it was trained on.
 
 ## Adding Models
 
