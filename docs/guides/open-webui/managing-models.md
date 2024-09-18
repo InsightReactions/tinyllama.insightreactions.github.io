@@ -21,8 +21,8 @@ To find a suitable model for your needs, visit the [Ollama Library](https://olla
 
 As an example for this guide, we will use `qwen2-math:7b-instruct` to enhance Open WebUI's capabilities with the ability to answer math-related inquiries. See the image below for a visual on how to identify the run tag.
 
-![A screenshot of the Ollama library showing a search for "qwen2-math" with the model run tag "qwen2-math:7b-instruct" highlighted](./ollama_run_tag.png)
-<span style="color: gray; font-size: smaller; padding: 6px; display: block;">A screenshot of the Ollama library showing a search for "qwen2-math" with the model run tag "qwen2-math:7b-instruct" highlighted</span>
+![A screenshot of the Ollama library showing the model card for qwen2-math with the model run tag "qwen2-math:7b-instruct" highlighted](./ollama_run_tag.png)
+<span style="color: gray; font-size: smaller; padding: 6px; display: block;">A screenshot of the Ollama library showing the model card for qwen2-math with the model run tag `qwen2-math:7b-instruct` highlighted</span>
 
 ### Understanding Model Identifiers
 
@@ -49,7 +49,7 @@ To reduce model size without significantly impacting performance, quantization m
 
 *   **qX_Y**: Varying levels of quantization that balance memory usage and computational efficiency. 
     *   Each `qX` value represents the number of bits allocated for each weight in the model. A lower value results in a smaller model size but may lead to a decrease in performance. 
-    *   The `_Y` suffix refers to bit shifting the weights, which may improve performance for certain quanitization levels. The suffix can be safe to ignore if you are not an advanced user, and is often ommitted in newer models in favor of the k-means clustering method, `K_X`.
+    *   The `_Y` suffix refers to bit shifting the weights to a specific byte boundary, which may improve performance for certain quanitization levels. The suffix can be safe to ignore if you are not an advanced user, and is often ommitted in newer models in favor of the k-means clustering method, `K_X`.
 *   **K_X**: The `K` indicates that k-means clustering was used to optimize model representation. This technique groups similar weights together and replaces them with a single, more compact value. The `_X` component reflects the level of compression achieved through this process:
     *   `_S`: Severe compression (high reduction in model size)
     *   `_M`: Moderate compression (medium reduction in model size)
