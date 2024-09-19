@@ -22,7 +22,8 @@ To find a suitable model for your needs, visit the [Ollama Library](https://olla
 As an example for this guide, we will use `qwen2-math:7b-instruct` to enhance Open WebUI's capabilities with the ability to answer math-related inquiries. See the image below for a visual on how to identify the run tag.
 
 ![A screenshot of the Ollama library showing the model card for qwen2-math with the model run tag "qwen2-math:7b-instruct" highlighted](./ollama_run_tag.png)
-<span style="color: gray; font-size: smaller; padding: 6px; display: block;">A screenshot of the Ollama library showing the model card for qwen2-math with the model run tag `qwen2-math:7b-instruct` highlighted</span>
+A screenshot of the Ollama library showing the model card for qwen2-math with the model run tag `qwen2-math:7b-instruct` highlighted
+{: .caption }
 
 ### Understanding Model Identifiers
 
@@ -69,7 +70,8 @@ For a good balance between model size and performance, 4-bit quantization (q4) i
 | Q8_0                 | 6.70          | +0.0004         | Very large, extremely low quality loss - recommended only for complex tasks |
 | FP16                 | 13.00         |                 | Extremely large, virtually no quality loss - not recommended |
 
-<span style="color: gray; font-size: smaller; padding: 6px; display: block;">See the source of this table for additional information: [llama.cpp discussion](https://github.com/ggerganov/llama.cpp/discussions/2094#discussioncomment-6351796)</span>
+{: .caption }
+See the source of this table for additional information: [llama.cpp discussion](https://github.com/ggerganov/llama.cpp/discussions/2094#discussioncomment-6351796)
 
 {: .note }
 Perplexity (PPL) is a measure of a language model's confidence in its predictions, indicating how certain it is about its next word predictions. Lower perplexity values suggest higher certainty, while higher values indicate lower certainty. It is important to note that certainty ≠ correctness, as a model can be very confident but still produce predictions that are not factual or accurate, depending on the context and the data it was trained on.
@@ -86,8 +88,9 @@ To add a model to Open WebUI, follow these steps:
 
 Once your model is added, you can use it in any chat session or integrate it with other third-party applications that support Ollama models, such as Amica.
 
-![A screenshot of the new model being used to answer a math question](math_example.png)
-<span style="color: gray; font-size: smaller; padding: 6px; display: block;">A screenshot of the new model being used to answer a math question</span>
+![A screenshot of the new model being used to help solve a math equation](math_example.png)
+A screenshot of the new model being used to help solve a math equation
+{: .caption }
 
 ## Removing Models
 

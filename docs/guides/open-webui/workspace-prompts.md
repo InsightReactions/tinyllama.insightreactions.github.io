@@ -7,7 +7,8 @@ parent: Open WebUI
 {: .no_toc }
 
 ![An image of a young woman waving at the camera, anime](sd-image-prompt-example.jpeg)
-<span style="color: gray; font-size: smaller; padding: 6px; display: block;">Prompt: high quality, woman, attractive, happy, one hand waving at the camera, inviting expression, vibrant smile, anime, colorful, detailed textures, intricate patterns, warm and inviting atmosphere, pastel colors, soft lighting, looking at camera, black hair</span>
+Prompt: high quality, woman, attractive, happy, one hand waving at the camera, inviting expression, vibrant smile, anime, colorful, detailed textures, intricate patterns, warm and inviting atmosphere, pastel colors, soft lighting, looking at camera, black hair
+{: .caption }
 
 With the ability to automate repetitive tasks and free up time for more creative pursuits, workspace prompts are a game-changer. By harnessing their power, you can streamline your workflow, reduce mental fatigue, and unlock new possibilities.
 
