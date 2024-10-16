@@ -18,6 +18,9 @@ In this guide, we'll teach you how to allow microphone access for Open WebUI. Th
 - TOC
 {:toc}
 
+{: .note }
+Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
+
 ## Why Is Microphone Access Disabled by Default?
 
 By default, browsers have security measures that block websites from accessing your microphone without explicit permission. Only enable microphone access if you're using the application within your local network or a VPN due to potential privacy risks when accessed over public networks.

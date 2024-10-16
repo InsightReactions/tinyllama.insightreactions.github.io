@@ -20,6 +20,9 @@ To effectively demonstrate the utility of workspace prompts in this guide, we'll
 - TOC
 {:toc}
 
+{: .note }
+Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
+
 ## Community Prompt Importing
 
 ![How to Copy the Open WebUI URL within the Tiny Llama Local Dashboard](copy-url.png)

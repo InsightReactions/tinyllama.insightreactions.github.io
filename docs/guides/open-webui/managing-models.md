@@ -15,6 +15,9 @@ This guide will walk you through the process of managing LLMs (Large Language Mo
 - TOC
 {:toc}
 
+{: .note }
+Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
+
 ## Selecting Models
 
 To find a suitable model for your needs, visit the [Ollama Library](https://ollama.ai/library). You can search for specific models or browse through categories. Take note of the name used in the run block and select the appropriate tag.

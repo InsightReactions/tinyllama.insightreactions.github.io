@@ -18,6 +18,9 @@ Llama3.1 is a formidable AI Code Assistant for its size, and it's perfectly serv
 - TOC
 {:toc}
 
+{: .note }
+Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
+
 ## Getting Started
 To configure your personal computer, follow these steps:
 1. **Open VSCode**: Launch Visual Studio Code on your computer.

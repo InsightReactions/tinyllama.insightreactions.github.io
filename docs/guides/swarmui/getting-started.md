@@ -8,6 +8,7 @@ nav_order: 1
 # Getting Started with SwarmUI
 {: .no_toc }
 
+In this comprehensive guide, we will walk you through the fundamental principles and features of using SwarmUI, a versatile image generation interface. Additionally, we will delve into the core concepts of Stable Diffusion technology, which powers this image creation process.
 
 ## Table of Contents
 {: .no_toc .text-delta }
@@ -15,12 +16,12 @@ nav_order: 1
 - TOC
 {:toc}
 
-
-In this comprehensive guide, we will walk you through the fundamental principles and features of using SwarmUI, a versatile image generation interface. Additionally, we will delve into the core concepts of Stable Diffusion technology, which powers this image creation process.
-
-To begin, navigate to the [tinyllama.local](http://tinyllama.local) landing page and access the SwarmUI service by clicking on the "SwarmUI" tab.
+{: .note }
+Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
 
 ## Understanding General Layout and Features
+
+To begin, navigate to the [tinyllama.local](http://tinyllama.local) landing page and access the SwarmUI service by clicking on the "SwarmUI" tab.
 
 Upon loading SwarmUI, you will be presented with a user-friendly interface featuring various tabs and settings. This guide aims to cover the essential aspects:
 1. At the top of the interface, there are various tabs. Our primary focus is on the "Generate" tab.

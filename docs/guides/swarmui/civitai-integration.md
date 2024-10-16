@@ -14,6 +14,8 @@ Are you ready to unlock the full potential of SwarmUI? SwarmUI's model download 
 - TOC
 {:toc}
 
+{: .note }
+Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
 
 ## Get Your Model's Civit.ai URL
 
