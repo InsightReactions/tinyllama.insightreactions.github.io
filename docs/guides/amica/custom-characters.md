@@ -48,16 +48,21 @@ Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local 
 
 ---
 
-### Save Your Character
+### Export Your Character
+
+![Screenshot of the VRM export tooltip in VRoid Studio](vrm_export.png)
 
 1. **Access the save menu**:
-   - Once you are satisfied with your design, click on the "hamburger menu" (three stacked lines) in the top-left corner of VRoid Studio.
-2. **Save your character**:
-   - Select "Save As."
-   - Input a name for your model under the "File name" field.
+   - Once you are satisfied with your design, click on the export menu in the top-right corner of VRoid Studio, according to the screenshot above.
+2. **Choose the "VRM" format**:
+   - Select "Export As VRM."
+3. **Save your character model**:
+   - Select Export Format `VRM0.0`
+   - Fill out the required details
+3. **Export the model**:
+   - Select the "Export" button to save your character model to your computer in VRM format.
+   - Wait a few moments for the processing step to finish
    - Save it to a location you will remember, such as your Documents or Desktop folder.
-3. **Close VRoid Studio**:
-   - After saving your character, you can safely close VRoid Studio.
 
 ---
 
