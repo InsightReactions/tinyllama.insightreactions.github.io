@@ -16,6 +16,8 @@ nav_order: 1
 {: .note }
 Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
 
+---
+
 ## Unpacking and Inspection
 
 Remove all components from the packaging. The packaging should contain the following (Figure 1):
@@ -28,6 +30,8 @@ Remove all components from the packaging. The packaging should contain the follo
 
 Visually inspect the components for damage. Verify there are no cracks or major structural defects on the Tiny Llama AI Home Server. The Power Cable and Network Cable should not have any exposed wiring.
 
+---
+
 ## Hardware Installation
 
 The Tiny Llama AI Home Server should be placed in a well-ventilated location, near a power outlet and network port.
@@ -38,6 +42,8 @@ The Tiny Llama AI Home Server should be placed in a well-ventilated location, ne
 
    ![Connecting the network cable to the server](figure3.jpg)
 3. Connect the corresponding ends of both cables to a power outlet and network port.
+
+---
 
 ## Powering On and Connecting
 
@@ -53,6 +59,8 @@ router's documentation for specific instructions on how to locate this informati
 
 {: .warning }
 Wireless network connectivity with the Wi-Fi dongle requires additional configuration. To use the dongle, please connect a monitor, keyboard, and mouse to the server, power it on, login (password: tinyllama), and follow this [Ubuntu Wi-Fi Setup Guide](https://linuxconfig.org/setup-wireless-interface-with-wpa-and-wpa2-on-ubuntu). The use of the dedicated network cable is recommended to avoid network disconnections/disruptions.
+
+---
 
 ## Exploring the Tiny Llama Local Dashboard
 
@@ -75,8 +83,11 @@ Following the guidance in the image above:
 {: .warning }
 Consider using an internet source that has a generous data usage policy when adding/removing AI Plugins or when perfoming an update, and allow several minutes for the action to complete -- AI Plugins are downloaded from the internet and are often significant in size (gigabytes).
 
+---
+
 ## Available AI Plugins
 - **Amica:** Amica is an open-source interface that enables effortless interaction with 3D characters, powered by voice synthesis and speech recognition. Our platform makes it remarkably easy to set up lifelike 3D avatars in your world. With advanced features like seamless transcription, natural text-to-speech, expressive animations, and vision capabilities, Amica raises the standard for digital interactions.
+- **Langflow:** Langflow is a UI framework for developing AI Agent applications with LLMs using a visual editor. It allows you to combine and configure components from various LLM providers and chain them together easily. Langflow also lets you create templates and export them as Python code or JSON.
 - **Open WebUI:** This is an extensible, feature-rich, and user-friendly self-hosted web-based AI chat interface designed for offline operation. It supports various LLM runners, including Ollama and OpenAI-compatible APIs.
 - **Stable Diffusion WebUI:** Automatic1111's Stable Diffusion WebUI is a web-based application that makes it easy to generate stunning images using the Stable Diffusion algorithm. As one of the most popular GUIs for SD image generation, it offers a wide range of features that improve style and quality with minimal processing impact. With support for multiple models, text prompts, and export options in various formats, Stable Diffusion WebUI is a powerful tool for creating impressive images.
 - **SwarmUI:** This is a new modular Stable Diffusion web-based image generation interface that emphasizes making AI image generation power tools easily accessible, performant, and extensible. In our opinion, it is easier to get started with SwarmUI than other interfaces like Automatic1111's WebUI or ComfyUI.

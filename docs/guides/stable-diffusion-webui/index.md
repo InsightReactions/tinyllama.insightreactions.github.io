@@ -8,3 +8,5 @@ has_toc: false
 ## [Adding New Models](downloading-models.html)
 
 Learn how to download and integrate new models from Civit.ai into Stable Diffusion WebUI using SwarmUI's model downloader.
+
+---

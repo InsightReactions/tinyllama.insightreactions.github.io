@@ -10,6 +10,8 @@ nav_order: 1
 
 In this comprehensive guide, we will walk you through the fundamental principles and features of using SwarmUI, a versatile image generation interface. Additionally, we will delve into the core concepts of Stable Diffusion technology, which powers this image creation process.
 
+---
+
 ## Table of Contents
 {: .no_toc .text-delta }
 
@@ -18,6 +20,8 @@ In this comprehensive guide, we will walk you through the fundamental principles
 
 {: .note }
 Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
+
+---
 
 ## Understanding General Layout and Features
 
@@ -29,6 +33,8 @@ Upon loading SwarmUI, you will be presented with a user-friendly interface featu
 3. The middle section displays the generated image output and its corresponding prompt. A "Generate" button is located here.
 4. On the right side, there's an option for batch image generation with a single click.
 5. Additional settings are available at the bottom of the interface, such as model selection and Image History to enhance your image creation process.
+
+---
 
 ## Basic Parameters
 
@@ -74,6 +80,8 @@ To change your Stable Diffusion model, simply expand the model selection in the 
 
 ![Model Selection](model_selection.png)
 
+---
+
 ## Generating Your First Image with SwarmUI
 Now that you're familiar with the general layout and basic parameters, let's create your first image using SwarmUI. The default settings provided work fine for this example.
 
@@ -82,6 +90,8 @@ Now that you're familiar with the general layout and basic parameters, let's cre
 3. Click the Generate button to initiate image generation.
 
 ![Picture of a cat wearing a wizard hat](wizard_cat.png)
+
+---
 
 ## Conclusion
 Stable Diffusion technology and SwarmUI provide a powerful combination for image generation. This guide has covered the essential aspects, but there's more to explore. Feel free to ask questions by clicking the '?' button next to each setting for a brief description.

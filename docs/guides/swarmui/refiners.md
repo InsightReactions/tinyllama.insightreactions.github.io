@@ -10,6 +10,8 @@ In this guide, we will discuss the refiner feature in SwarmUI, also known as ima
 
 We recommend that users familiarize themselves with the fundamentals of SwarmUI by reading our [Getting Started guide](./getting-started) prior to diving into this topic.
 
+---
+
 ## Table of Contents
 {: .no_toc .text-delta }
 
@@ -18,6 +20,8 @@ We recommend that users familiarize themselves with the fundamentals of SwarmUI 
 
 {: .note }
 Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
+
+---
 
 ## Refiner Parameters and Settings
 The refiner feature in SwarmUI is simple and intuitive. Access the Refiner settings from the left-hand side of the interface.
@@ -31,6 +35,8 @@ When optimizing image quality with refiners, consider these crucial parameters:
 3. **Refiner Method**: The method of application significantly affects the final image quality. We recommend using "PostApply," which applies the refiner after generating the original image. Other settings apply the refiner during generation, but they may yield different results.
 4. **Refiner Upscale**: This parameter determines the degree of upscaling desired for the image. Common values range from 1.5x to 4x. However, be cautious with higher values due to potential resource constraints.
 5. **Refiner Upscale Method**: The upscale method used by the refiner significantly impacts image quality. We recommend using established methods such as "4x-UltraSharp" for optimal results.
+
+---
 
 ## Practical Application: Upgrading Image Resolution
 Let's demonstrate the practical application of refiners by upgrading an image. Here are some suggested parameters:
@@ -50,3 +56,5 @@ The resulting image should demonstrate significant improvements in resolution:
 ![Upscaled image after applying refiner settings](upscaled_image.png)
 
 Now that's one fine-looking gentleman!
+
+---

@@ -12,6 +12,8 @@ You may have seen this error message when trying to use voice recognition featur
 
 In this guide, we'll teach you how to allow microphone access for Open WebUI. This will enable you to use voice recognition features within the application, such as Speech-To-Text (STT).
 
+---
+
 ## Table of Contents
 {: .no_toc .text-delta }
 
@@ -21,11 +23,15 @@ In this guide, we'll teach you how to allow microphone access for Open WebUI. Th
 {: .note }
 Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
 
+---
+
 ## Why Is Microphone Access Disabled by Default?
 
 By default, browsers have security measures that block websites from accessing your microphone without explicit permission. Only enable microphone access if you're using the application within your local network or a VPN due to potential privacy risks when accessed over public networks.
 
 Configuring this will depend on your specific browser and operating system. To make the microphone work, you need to configure your browser to treat the website as secure (https).
+
+---
 
 ## Fixes for Common Browsers
 The table below provides general instructions for some popular browsers:
@@ -43,6 +49,8 @@ The table below provides general instructions for some popular browsers:
 
 Please note that these instructions are general and may not be accurate for your specific setup or version of the browser. If you're having trouble, it might be helpful to search online for more specific instructions based on your exact situation.
 
+---
+
 ### Example: Microsoft Edge
 Here is an example of how to allow microphone access in Microsoft Edge, with a placeholder for the IP address:
 1. In Edge, type `edge://flags/` into the URL bar and press Enter.
@@ -51,3 +59,5 @@ Here is an example of how to allow microphone access in Microsoft Edge, with a p
 4. Restart Edge for changes to take effect.
 
 ![Edge Permission Example](edge_permission_example.png)
+
+---

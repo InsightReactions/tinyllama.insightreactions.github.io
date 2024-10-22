@@ -9,6 +9,8 @@ parent: Open WebUI
 
 This guide will walk you through the process of managing LLMs (Large Language Models) for your local instance of Open WebUI using Ollama.
 
+---
+
 ## Table of Contents
 {: .no_toc .text-delta }
 
@@ -17,6 +19,8 @@ This guide will walk you through the process of managing LLMs (Large Language Mo
 
 {: .note }
 Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
+
+---
 
 ## Selecting Models
 
@@ -27,6 +31,8 @@ As an example for this guide, we will use `qwen2-math:7b-instruct` to enhance Op
 ![A screenshot of the Ollama library showing the model card for qwen2-math with the model run tag "qwen2-math:7b-instruct" highlighted](./ollama_run_tag.png)
 A screenshot of the Ollama library showing the model card for qwen2-math with the model run tag `qwen2-math:7b-instruct` highlighted
 {: .caption }
+
+---
 
 ### Understanding Model Identifiers
 
@@ -79,6 +85,8 @@ See the source of this table for additional information: [llama.cpp discussion](
 {: .note }
 Perplexity (PPL) is a measure of a language model's confidence in its predictions, indicating how certain it is about its next word predictions. Lower perplexity values suggest higher certainty, while higher values indicate lower certainty. It is important to note that certainty ≠ correctness, as a model can be very confident but still produce predictions that are not factual or accurate, depending on the context and the data it was trained on.
 
+---
+
 ## Adding Models
 
 To add a model to Open WebUI, follow these steps:
@@ -95,6 +103,8 @@ Once your model is added, you can use it in any chat session or integrate it wit
 A screenshot of the new model being used to help solve a math equation
 {: .caption }
 
+---
+
 ## Removing Models
 
 1. Log in to your Open WebUI instance and access the Admin Panel by clicking on your profile picture in the top-right corner and selecting "Admin Panel" from the dropdown menu.
@@ -106,6 +116,8 @@ A screenshot of the new model being used to help solve a math equation
 {: .note }
 Deleting a model will also remove the associated modelfile that was created when the model was added to Open WebUI, but will not remove any existing chat history with that model.
 
+---
+
 ## Conclusion
 
 Managing Large Language Models (LLMs) is an essential aspect of utilizing Open WebUI effectively. By following the steps outlined in this guide, you can easily find and add models from Ollama to your instance. Understanding model identifiers and selecting the right tag based on size, type, and quantization method ensures optimal performance for various tasks.
@@ -115,3 +127,5 @@ Remember to consider factors such as perplexity when choosing a model, and don't
 With this knowledge, you're ready to unlock the full potential of your Open WebUI experience.
 
 Happy generating, and may your output tokens be ever fruitful!
+
+---

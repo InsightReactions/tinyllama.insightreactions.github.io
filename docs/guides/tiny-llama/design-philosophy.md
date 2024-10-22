@@ -10,6 +10,8 @@ At InsightReactions, we are dedicated to making cutting-edge open-source AI tech
 
 Our mission is to simplify AI for home users by offering an affordable pre-configured AI home server and the completely free Tiny Llama service, enabling breathtaking image generation and intelligent conversations through Stable Diffusion and robust LLM chat interfaces similar to ChatGPT.
 
+---
+
 ## Table of Contents
 {: .no_toc .text-delta }
 
@@ -18,6 +20,8 @@ Our mission is to simplify AI for home users by offering an affordable pre-confi
 
 {: .note }
 Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
+
+---
 
 ## Guiding Principles
 
@@ -35,19 +39,20 @@ Your privacy and data security are our top priorities. By promoting local comput
 
 We believe AI should be accessible to everyone, regardless of budget. Our Tiny Llama AI Home Server is an affordable, pre-configured Mini-ITX PC that allows users to host their own Tiny Llama service effortlessly and cost-effectively. It's designed for non-technical users familiar with generative AI technologies who prefer the privacy of local computing.
 
+---
+
 ## The Tiny Llama Service
 
 The Tiny Llama service includes:
 
-* Pre-packaged AI WebUI software for seamless use on any device
+* A home portal for easy access to all web apps and common system maintenance tasks.
+* Powerful prepackaged content replete with popular AI models, open-source web-based AI software, how-to guides, and more
 * Effortless access to continuously updated open-source AI technologies
-* A home portal for easy access to all web apps
-* Pre-installed premium content like powerful and popular AI models, how-to guides, and more
 
-## Hardware Specifications
-
-Our hardware specifications ensure robust performance, capable of generating more than 55 tokens per second with Meta's Llama3-8b and supporting models up to 13b parameters (quantized). Visit the [InsightReactions Store](https://insightreactions.com/store) for more information.
+---
 
 ## Conclusion
 
 We are committed to providing an exceptional user experience while upholding the core values contained within these Three Pillars. Join us in our mission to empower AI adoption, keeping the data and technology under your control while experiencing what open-source generative AI technologies have to offer.
+
+---

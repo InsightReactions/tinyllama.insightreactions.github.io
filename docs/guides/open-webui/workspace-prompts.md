@@ -14,6 +14,8 @@ With the ability to automate repetitive tasks and free up time for more creative
 
 To effectively demonstrate the utility of workspace prompts in this guide, we'll get into how to use the example "Stable Diffusion Prompt Generator" prompt, created by the InsightReactions team and hosted in the Open WebUI Community repository, to craft Stable Diffusion prompts that yield stunning images with any compatible image generation service.
 
+---
+
 ## Table of Contents
 {: .no_toc .text-delta }
 
@@ -22,6 +24,8 @@ To effectively demonstrate the utility of workspace prompts in this guide, we'll
 
 {: .note }
 Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
+
+---
 
 ## Community Prompt Importing
 
@@ -35,6 +39,8 @@ Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local 
 
 {: .important }
 To access the `Get` button, you may need to create a free account with the Open WebUI Community.
+
+---
 
 ## Workspace Prompt Usage
 
@@ -51,6 +57,8 @@ To invoke the prompt in your chat, follow these steps:
 4. Next, enter a list of criteria at the end of the prompt. For example, criteria could be anything from "The feeling of fresh coffee in the morning" to "A woman under an umbrella in the pouring rain, soft light". Be as open-ended or specific as you'd like!
 5. Submit the message when you're ready.
 
+---
+
 ## Multi-turn Interactions
 ![An image of a woman wearing dresses of various colors](prompt-refining.png)
 
@@ -62,3 +70,5 @@ One of the most exciting aspects of including LLMs into the creative process is 
 - Modifying the setting or environment
 
 Simply ask Llama3.1 to make these changes, and it will dutifully perform them for you.
+
+---

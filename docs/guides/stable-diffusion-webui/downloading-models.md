@@ -8,6 +8,8 @@ parent: Stable Diffusion WebUI
 
 While AUTOMATIC1111's Stable Diffusion WebUI is an incredibly powerful tool for generating digital media, one of its limitations is that it doesn't have a built-in feature to download new models from within its interface. However, this limitation can be easily overcome by leveraging SwarmUI's model downloader.
 
+---
+
 ## Table of Contents
 {: .no_toc .text-delta }
 
@@ -17,6 +19,8 @@ While AUTOMATIC1111's Stable Diffusion WebUI is an incredibly powerful tool for 
 {: .note }
 Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
 
+---
+
 ## What Model Types are Supported?
 
 Models you download with SwarmUI using the model downloader will automatically become available in Stable Diffusion WebUI. The supported model types include:
@@ -25,8 +29,12 @@ Models you download with SwarmUI using the model downloader will automatically b
 - LoRAs (Low-Rank Adaptions)
 - VAEs (Variational Autoencoders)
 
+---
+
 ## Getting Started with SwarmUI's Model Downloader
 
 To take advantage of this feature, follow [our guide on using SwarmUI's model downloader](/guides/swarmui/civitai-integration.html) to download new models from [Civit.ai](https://civit.ai). By using the SwarmUI model downloader, you'll be able to easily expand your model collection on your Tiny Llama AI Home Server and unlock even more creative possibilities.
 
 Happy generating!
+
+---

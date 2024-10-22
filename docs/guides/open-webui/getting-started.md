@@ -16,6 +16,8 @@ nav_order: 1
 {: .note }
 Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
 
+---
+
 ## Initial Setup
 
 ### Accessing Open WebUI
@@ -34,6 +36,8 @@ If someone else has already created an account on this device, you may encounter
 
 ![Open WebUI Account Activation Pending screen](account_pending.png)
 
+---
+
 ## Account Activation
 Follow these steps to activate an account.
 
@@ -48,6 +52,8 @@ From the Admin Panel, locate the user account with a pending role. Click on the 
 ![Open WebUI Admin Panel Promote User screen](admin_panel_promote_user.png)
 
 If you want to grant additional permissions, click on the "user" role again to promote the account to the "admin" role. This will allow the user to access the Admin Panel and other configuration settings associated with Open WebUI.
+
+---
 
 ## How to Chat
 
@@ -67,6 +73,8 @@ Please wait 5-10 seconds for the model to load into memory for the initial respo
 {: .important }
 Due to memory limitations, the Tiny Llama AI Home Server (2024) is roughly constrained to a 2048 token context window, which is equivalent to ~1,500 words in total, including the entirety of the conversation. In many cases, it's preferable to only copy and paste relevant sections of a document.
 
+---
+
 ## Model Selection
 To select a model, click on the model name at the top of the chat window. You can choose from several options, and you can even select multiple models using the "+" sign to simultaneously compare their responses.
 
@@ -77,6 +85,8 @@ By default, Tiny Llama ships with these models available for selection:
 2. **hermes3:** A llama3.1 finetuned model from Nous Research, offering uncensored conversations without content filters or ethical guidelines. This makes it ideal for highly creative endeavors and prompt suggestions, such as roleplay.
 
 3. **minicpm-v:** An LMM (Large Multi-modal Model) capable of reading/writing text and visual interpretation of image content. This model is great for transcribing text from images or basic scene interpretation. Ideally, it should be used in conjunction with other models like llama3.1 for the best experience, as its visual component may detract the model from higher-quality reading and conversational comprehension.
+
+---
 
 ## Image Inference via Chat
 
@@ -89,6 +99,8 @@ To perform image inference, follow these steps:
 
 {: .note }
 Keep in mind that while these models are improving at a fast rate, they're not perfect yet. However, you can still get great assistance with interpreting textual content like labels or mixed-media images that contain both text and image data. The more context you provide the model upfront, the better it will be at understanding the scene and providing a helpful response.
+
+---
 
 ## Image Generation via Chat
 ![Open WebUI image generation prompt](image_gen_prompt.png)
@@ -104,3 +116,5 @@ Open WebUI is configured for image generation inference by default, using [Cyber
 
 {: .note }
 The initial image generation may take up to 5-10 seconds depending on system utilization and prompt parameters. Subsequent generations typically complete within 4 seconds, as the diffusion model remains in memory for up to 1 minute. After 1 minute, the diffusion model is unloaded to make room for other models.
+
+---

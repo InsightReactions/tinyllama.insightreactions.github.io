@@ -12,6 +12,8 @@ parent: Tiny Llama + AI Home Server
 
 Llama3.1 is a formidable AI Code Assistant for its size, and it's perfectly servicable in the role for most relatively popular programming languages. Luckily, Tiny Llama devices are configured to support this functionality out-of-the-box in the standard configuration!
 
+---
+
 ## Table of Contents
 {: .no_toc .text-delta }
 
@@ -20,6 +22,8 @@ Llama3.1 is a formidable AI Code Assistant for its size, and it's perfectly serv
 
 {: .note }
 Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local computing via any device on your home network with InsightReactions' **Tiny Llama AI Home Server**. Generate images, converse with LLMs, accelerate projects, and more—all while retaining complete control over your data. Get one now at the [InsightReactions Store](https://insightreactions.com/store).
+
+---
 
 ## Getting Started
 To configure your personal computer, follow these steps:
@@ -37,6 +41,8 @@ To configure your personal computer, follow these steps:
 > - On Unix-like systems (e.g., Linux, macOS), it's usually `/home/username`.
 > - On Windows, it's `C:\Users\username`.
 
+---
+
 ## Using Continue
 After setting up Continue's Code Assistant, you can utilize it with the editor within VSCode in several ways:
 
@@ -47,6 +53,8 @@ After setting up Continue's Code Assistant, you can utilize it with the editor w
 - **Code Documentation**: Generate proper and complete documentation for your code.
 - **Concept Generation**: Effortless concept generation for class structures, naming entities, feature ideas, test cases, test data, and more.
 
+---
+
 ## Interactive Tutorials
 ![Code Assistant Help](code-assistant-help.png)
 To get started with Continue, follow these steps to access some useful resources:
@@ -55,6 +63,8 @@ To get started with Continue, follow these steps to access some useful resources
 2. **Search for "Continue: Focus on View"**: Search for and select the "Continue: Focus on View" command.
 3. **View the Help Pane**: Click on the question mark icon in the bottom right of the now-focused window to view the help pane.
 4. **Access the Resources**: From here, you can see the Documentation, [interactive] Tutorial, Keyboard Shortcuts, and more.
+
+---
 
 ## Providing Chat Context
 ![Code Assistant Ctrl L](code-assistant-ctrl-l.png)
@@ -71,6 +81,8 @@ Alternatively, you can add relevant content manually using [Markdown Fenced Code
 Please note that you can quickly run out of context window space when including context -- opt for including precise snippets over including large sections of documents to avoid running out of room for an adequate response.
 
 With your contextual snippets in place, you can take advantage of the full potential of the chat pane. Ask questions about the content itself, request revisions to the design or layout, or even convert content between languages - for example, from markdown to HTML, or English to Spanish. This powerful tool also serves as a personal editor for writing technical documents, formatting LaTeX, and more, making it an indispensable companion for any project.
+
+---
 
 ## Editing Content with the LLM
 <video width="736" controls autoplay loop>
@@ -89,11 +101,17 @@ To edit a specific region of code, simply highlight it in your editor and press 
 3. **Input changes**: Enter your desired changes into the input field. You can add relevant content using Markdown Fenced Code Blocks or leverage [Continue's @ Context Provider](https://docs.continue.dev/customization/context-providers) functionality to pull additional information. When you're finished, press Enter to submit your request.
 4. **Review and apply changes**: The LLM will then review the highlighted region line by line, making the desired changes. Before applying the changes to the source file, you'll be given an opportunity to accept or reject them.
 
+---
+
 ## Troubleshooting Connection Issues
 Having trouble connecting to the Tiny Llama service? Try these steps:
 
 1. **Check Network Access**: Ensure that your system has a stable local area network connection and can communicate with the Tiny Llama service.
 2. **Use Server's IP Address**: Issues with mDNS domain resolution are still common for many personal computers. Try replacing all instances of `tinyllama.local` in the provided `config.json` with the actual IP address of your system hosting the Tiny Llama service (or Ollama for non-Tiny Llama users). Use the same IP address that appears in the URL when navigating to a Tiny Llama service, like Open WebUI.
 
+---
+
 ## Additional Resources
 For more technical information and help guides on Continue, visit [Continue's Official Documentation](https://docs.continue.dev/).
+
+---
