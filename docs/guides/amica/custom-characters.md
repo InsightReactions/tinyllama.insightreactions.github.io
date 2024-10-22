@@ -83,6 +83,9 @@ Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local 
 7. **Confirm successful import**:
    - If done correctly, Amica will load your character immediately into the background. Back out of the submenus by clicking on the house icon 🏠 in the top-left corner to see your new avatar.
 
+{: .note }
+Amica stores these settings on your browser locally. If you want to use this 3D model with a different browser, or on a different computer, you will need to repeat these steps.
+
 ---
 
 ### Changing the Display Name
