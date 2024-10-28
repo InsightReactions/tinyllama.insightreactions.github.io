@@ -28,7 +28,7 @@ Open WebUI is an extensible, feature-rich, and user-friendly self-hosted WebUI d
 
 ## [Stable Diffusion WebUI](guides/stable-diffusion-webui/index.html)
 
-SAutomatic1111's Stable Diffusion WebUI is a web-based application that makes it easy to generate stunning images using the Stable Diffusion algorithm. As one of the most popular GUIs for SD image generation, it offers a wide range of features that improve style and quality with minimal processing impact. With support for multiple models, text prompts, and export options in various formats, Stable Diffusion WebUI is a powerful tool for creating impressive images.
+Automatic1111's Stable Diffusion WebUI is a web-based application that makes it easy to generate stunning images using the Stable Diffusion algorithm. As one of the most popular GUIs for SD image generation, it offers a wide range of features that improve style and quality with minimal processing impact. With support for multiple models, text prompts, and export options in various formats, Stable Diffusion WebUI is a powerful tool for creating impressive images.
 
 ---
 
