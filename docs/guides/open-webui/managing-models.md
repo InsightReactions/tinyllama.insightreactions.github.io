@@ -26,7 +26,7 @@ Ditch costly subscriptions and enjoy the freedom and privacy of dedicated local 
 
 To find a suitable model for your needs, visit the [Ollama Library](https://ollama.ai/library). You can search for specific models or browse through categories. Take note of the name used in the run block and select the appropriate tag.
 
-As an example for this guide, we will use `qwen2-math:7b-instruct` to enhance Open WebUI's capabilities with the ability to answer math-related inquiries. See the image below for a visual on how to identify the run tag.
+As an example for this guide, we will use model ID `qwen2-math:7b-instruct` to enhance Open WebUI's capabilities with the ability to answer math-related inquiries. See the image below for a visual on how to identify the run tag.
 
 ![A screenshot of the Ollama library showing the model card for qwen2-math with the model run tag "qwen2-math:7b-instruct" highlighted](./ollama_run_tag.png)
 A screenshot of the Ollama library showing the model card for qwen2-math with the model run tag `qwen2-math:7b-instruct` highlighted
@@ -87,15 +87,22 @@ Perplexity (PPL) is a measure of a language model's confidence in its prediction
 
 ---
 
-## Adding Models
+## Managing Models in Open WebUI (Since v0.4.8)
 
-To add a model to Open WebUI, follow these steps:
+To add or remove a model in Open WebUI, follow these initial steps to access the model management interface:
 
-1. Log in to your Open WebUI instance and access the Admin Panel by clicking on your profile picture in the top-right corner and selecting "Admin Panel" from the dropdown menu.
-2. In the Admin Panel, switch from the Dashboard view to Settings and select the Models tab.
-3. Under "Pull a model from Ollama.com", enter the model tag you acquired from the [Selecting Models](#selecting-models) step.
-4. Click the download icon (⬇️) to the right of the input field to add the model to Open WebUI.
-5. Wait for the progress bar to complete, indicating that the model has been successfully added.
+1. Log in to your Open WebUI instance.
+2. Access the Admin Panel by clicking on your profile picture in the top-right corner and selecting "Admin Panel" from the dropdown menu.
+3. In the Admin Panel, switch from the Users view to Settings and select the Connections tab.
+4. Under "Manage Ollama API Connections", click on the Manage icon (🔧).
+
+### Adding a Model
+
+To add a model:
+
+1. Under "Pull a model from Ollama.com", enter the model tag you acquired from selecting models.
+2. Click the download icon (⬇️) to the right of the input field to add the model.
+3. Wait for the progress bar to complete, indicating that the model has been successfully added.
 
 Once your model is added, you can use it in any chat session or integrate it with other third-party applications that support Ollama models, such as Amica.
 
@@ -103,15 +110,13 @@ Once your model is added, you can use it in any chat session or integrate it wit
 A screenshot of the new model being used to help solve a math equation
 {: .caption }
 
----
+### Removing a Model
 
-## Removing Models
+To remove a model:
 
-1. Log in to your Open WebUI instance and access the Admin Panel by clicking on your profile picture in the top-right corner and selecting "Admin Panel" from the dropdown menu.
-2. In the Admin Panel, switch from the Dashboard view to Settings and select the Models tab.
-3. Locate the field titled "Delete a Model", and click on it to expand the list of available models.
-4. Select the model you wish to remove from the list.
-5. Click the "🗑️" button to the right of the field, which will delete the selected model.
+1. Locate the field titled "Delete a Model", and click on it to expand the list of available models.
+2. Select the model you wish to remove from the list.
+3. Click the "🗑️" button to the right of the field to delete the selected model.
 
 {: .note }
 Deleting a model will also remove the associated modelfile that was created when the model was added to Open WebUI, but will not remove any existing chat history with that model.
@@ -126,6 +131,6 @@ Remember to consider factors such as perplexity when choosing a model, and don't
 
 With this knowledge, you're ready to unlock the full potential of your Open WebUI experience.
 
-Happy generating, and may your output tokens be ever fruitful!
+Happy generating!
 
 ---
